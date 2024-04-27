@@ -1,0 +1,15 @@
+C:\Jeky\2학년\데이터분석\baseball\baseball\bin\Debug\net8.0\baseball.exe
+C:\Jeky\2학년\데이터분석\baseball\baseball\bin\Debug\net8.0\baseball.deps.json
+C:\Jeky\2학년\데이터분석\baseball\baseball\bin\Debug\net8.0\baseball.runtimeconfig.json
+C:\Jeky\2학년\데이터분석\baseball\baseball\bin\Debug\net8.0\baseball.dll
+C:\Jeky\2학년\데이터분석\baseball\baseball\bin\Debug\net8.0\baseball.pdb
+C:\Jeky\2학년\데이터분석\baseball\baseball\obj\Debug\net8.0\baseball.GeneratedMSBuildEditorConfig.editorconfig
+C:\Jeky\2학년\데이터분석\baseball\baseball\obj\Debug\net8.0\baseball.AssemblyInfoInputs.cache
+C:\Jeky\2학년\데이터분석\baseball\baseball\obj\Debug\net8.0\baseball.AssemblyInfo.cs
+C:\Jeky\2학년\데이터분석\baseball\baseball\obj\Debug\net8.0\baseball.csproj.CoreCompileInputs.cache
+C:\Jeky\2학년\데이터분석\baseball\baseball\obj\Debug\net8.0\baseball.sourcelink.json
+C:\Jeky\2학년\데이터분석\baseball\baseball\obj\Debug\net8.0\baseball.dll
+C:\Jeky\2학년\데이터분석\baseball\baseball\obj\Debug\net8.0\refint\baseball.dll
+C:\Jeky\2학년\데이터분석\baseball\baseball\obj\Debug\net8.0\baseball.pdb
+C:\Jeky\2학년\데이터분석\baseball\baseball\obj\Debug\net8.0\baseball.genruntimeconfig.cache
+C:\Jeky\2학년\데이터분석\baseball\baseball\obj\Debug\net8.0\ref\baseball.dll
