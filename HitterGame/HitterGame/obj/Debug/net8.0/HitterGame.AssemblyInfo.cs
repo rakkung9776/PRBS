@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HitterGame")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b2e8375c057a9788252321e4de8d63119101e04a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+298d3d85895cb25b1bc5746a7b09872e790a848c")]
 [assembly: System.Reflection.AssemblyProductAttribute("HitterGame")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HitterGame")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
