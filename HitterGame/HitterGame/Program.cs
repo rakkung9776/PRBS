@@ -1,6 +1,9 @@
 ﻿using HitterGame;
 using System;
 using System.IO;
+using System.Net.Http;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Baseball_Final
 {
@@ -8,9 +11,11 @@ namespace Baseball_Final
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("학번을 입력하세요.");
+            string playerID = Console.ReadLine();
             bool playAgain = false;
-            bool lobbyMessageShown = false;
             string choice;
+            bool lobbyMessageShown = false;
 
             do
             {
@@ -31,7 +36,7 @@ namespace Baseball_Final
                     switch (choice)
                     {
                         case "1":
-                            StartGame(args);
+                            StartGame(playerID);
                             if (!AskToPlayAgain())
                             {
                                 Console.WriteLine("게임을 종료합니다.");
@@ -93,14 +98,11 @@ namespace Baseball_Final
             Console.WriteLine("===================================================\n\n");
         }
 
-        static void StartGame(string[] args)
+        static void StartGame(string playerID)
         {
 
             do
             {
-                // 파일 경로
-                string filePath = "savedata.txt";
-
                 int ahnta = 0;
                 int homerun = 0;
                 int outs = 0;
@@ -213,8 +215,9 @@ namespace Baseball_Final
                 Console.SetCursorPosition(8, 2);
                 Console.WriteLine($"최종 결과: {score} 점, {all} 타수, {homerun} 홈런, {outs} 아웃, {totalTrials} 볼넷, {ahnta} 안타");
 
-                // 파일에 저장할 결과 적음
-                SaveGameResult(filePath, all, outs, homerun, totalTrials, ahnta, score);
+                // Google 스프레드시트에 데이터 전송
+                SendDataToGoogleSheet(playerID, $"{DateTime.Now.Month}월 {DateTime.Now.Day}일", $"{DateTime.Now.Hour}:{DateTime.Now.Minute}:{DateTime.Now.Second}", score, all, homerun, outs, totalTrials, ahnta);
+
             } while (AskToPlayAgain());
         }
 
@@ -230,24 +233,6 @@ namespace Baseball_Final
             return input == "y" || input == "yes";
         }
 
-        // 데이터 누적 시키면서 총 타석까지 같이 결과 추가
-        static void SaveGameResult(string filePath, int all, int outs, int homerun, int totalTrials, int ahnta, double score)
-        {
-            using (StreamWriter writer = new StreamWriter(filePath, true))
-            {
-                writer.WriteLine("==============================");
-                writer.WriteLine($"총 점수: {score}");
-                writer.WriteLine($"총 타수: {all}");
-                writer.WriteLine($"아웃: {outs}");
-                writer.WriteLine($"홈런: {homerun}");
-                writer.WriteLine($"볼넷: {totalTrials}");
-                writer.WriteLine($"안타: {ahnta}");
-                writer.WriteLine("==============================");
-            }
-            Console.SetCursorPosition(3, 20);
-            Console.WriteLine($"결과값이 {filePath}에 저장되었습니다. 결과는 누적됩니다.");
-        }
-
         static bool AskToPlayAgain()
         {
             Console.SetCursorPosition(3, 24);
@@ -255,6 +240,51 @@ namespace Baseball_Final
             Console.SetCursorPosition(55, 24);
             string input = Console.ReadLine().ToLower();
             return input == "y" || input == "yes";
+        }
+
+        static async Task SendDataToGoogleSheet(string playerID, string logintime, string nowtime, double score, int all, int homerun, int outs, int totalTrials, int ahnta)
+        {
+            try
+            {
+                // Google 스프레드시트로 전송할 URL
+                string url = "https://script.google.com/macros/s/AKfycby_NB11nqrGzW5T7lQ-UhMpNKVExpPsebaLUm7I2jB_hXqVvdKAbAEX0_Yo4s-6RQ7T/exec"; // AppsScript URL 적기 /exec
+
+                // 파라미터 설정
+                string parameters = $"?playerID={playerID}&logintime={logintime}&nowtime={nowtime}&score={score}&all={all}&homerun={homerun}&outs={outs}&totalTrials={totalTrials}&ahnta={ahnta}";
+
+                // 최종 URL 조합
+                string fullUrl = url + parameters;
+
+                // HttpClient 생성
+                using (HttpClient client = new HttpClient())
+                {
+                    // GET 요청 보내기
+                    HttpResponseMessage response = await client.GetAsync(fullUrl);
+
+                    // 응답 결과 확인
+                    if (response.IsSuccessStatusCode)
+                    {
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.SetCursorPosition(3, 20);
+                        Console.WriteLine("Google 스프레드시트에 데이터가 전송되었습니다.");
+                        Console.ResetColor();
+                    }
+                    else
+                    {
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.SetCursorPosition(3, 20);
+                        Console.WriteLine($"Google 스프레드시트에 데이터 전송 실패! 상태 코드: {response.StatusCode}");
+                        Console.ResetColor();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.ForegroundColor = ConsoleColor.Magenta;
+                Console.SetCursorPosition(3, 20);
+                Console.WriteLine($"Google 스프레드시트에 데이터 전송 중 오류 발생: {ex.Message}");
+                Console.ResetColor();
+            }
         }
     }
 }
