@@ -20,7 +20,7 @@ namespace Baseball_Final
             do
             {
                 do
-                {
+                {               
                     Console.Clear();
                     Console.WriteLine("\n===================================================");
                     Console.WriteLine($"\n\n{new string(' ', 16)}|~) _  _ _ |_  _ ||");
@@ -114,7 +114,7 @@ namespace Baseball_Final
                 Console.Clear();
                 DrawingObject bigWindow = new DrawingObject(70, 26);
                 bigWindow.DrawIntro();
-                Console.ReadLine();
+                Console.ReadKey();
 
                 // 게임이 종료되지 않는 동안 반복
                 while (outs < 1) // 아웃이 1회 이상 발생할 때까지 반복
@@ -146,8 +146,16 @@ namespace Baseball_Final
                         if (hitOutcome <= 5) // 5% 확률로 홈런
                         {
                             Console.ForegroundColor = ConsoleColor.Yellow;
-                            Console.SetCursorPosition(3, 13);
-                            Console.WriteLine("홈런!!");
+                            Console.SetCursorPosition(13, 10);
+                            Console.WriteLine("   _ __                     ___                ");
+                            Console.SetCursorPosition(13, 11);
+                            Console.WriteLine("  /// /  _   _    __       / o |      _    __");
+                            Console.SetCursorPosition(13, 12);
+                            Console.WriteLine(" / ` / ,'o| / \\','o/     /  ,' /7/7 / \\/7 (c'");
+                            Console.SetCursorPosition(13, 13);
+                            Console.WriteLine("/_n_/  |_,'/_nn_/|_(     /_/`_\\ /__/ /_n_/ /__)");
+                            Console.SetCursorPosition(28, 17);
+                            Console.WriteLine("~~~!!홈 런!!~~~");
                             Console.ResetColor();
                             homerun++;
                             score += 1;
@@ -155,7 +163,15 @@ namespace Baseball_Final
                         else if (hitOutcome <= 70) // 65% 확률로 안타
                         {
                             Console.ForegroundColor = ConsoleColor.Green;
+                            Console.SetCursorPosition(3, 10);
+                            Console.WriteLine("   _ __           ");
+                            Console.SetCursorPosition(3, 11);
+                            Console.WriteLine("  /// /  ()  /7  __");
+                            Console.SetCursorPosition(3, 12);
+                            Console.WriteLine(" / ` /  /7  /_7 (c'");
                             Console.SetCursorPosition(3, 13);
+                            Console.WriteLine("/_n_/  //  //  /__)");
+                            Console.SetCursorPosition(3, 17);
                             Console.WriteLine("안타!");
                             Console.ResetColor();
                             ahnta++;
@@ -164,7 +180,15 @@ namespace Baseball_Final
                         else // 30% 확률로 아웃
                         {
                             Console.ForegroundColor = ConsoleColor.Red;
+                            Console.SetCursorPosition(3, 10);
+                            Console.WriteLine("    _   _ __ _____  ");
+                            Console.SetCursorPosition(3, 11);
+                            Console.WriteLine("  ,' \\ /// //_  _/ ");
+                            Console.SetCursorPosition(3, 12);
+                            Console.WriteLine(" / o |/ U /  / /   ");
                             Console.SetCursorPosition(3, 13);
+                            Console.WriteLine(" |_,' \\_,'  /_/     ");
+                            Console.SetCursorPosition(3, 16);
                             Console.WriteLine("아웃!");
                             Console.ResetColor();
                             outs++;
@@ -183,7 +207,15 @@ namespace Baseball_Final
                             if (hitOutcome <= 50) // 50% 확률로 볼넷
                             {
                                 Console.ForegroundColor = ConsoleColor.DarkCyan;
-                                Console.SetCursorPosition(3, 14);
+                                Console.SetCursorPosition(3, 10);
+                                Console.WriteLine("   ___                                   ___                ");
+                                Console.SetCursorPosition(3, 11);
+                                Console.WriteLine("  / o.)  _   __  __       _   _          / o.)  _   /7  /7  __");
+                                Console.SetCursorPosition(3, 12);
+                                Console.WriteLine(" / o \\ ,'o| (c','o/     ,'o| / \\/7      / o \\ ,'o| //  //  (c'");
+                                Console.SetCursorPosition(3, 13);
+                                Console.WriteLine("/___,' |_,7/__)|_(      |_,'/_n_/      /___,' |_,7//  //  /__)");
+                                Console.SetCursorPosition(3, 17);
                                 Console.WriteLine("볼넷!");
                                 Console.ResetColor();
                                 totalTrials++; // 볼넷 발생 시 볼넷 횟수 증가
@@ -192,7 +224,15 @@ namespace Baseball_Final
                             else // 50% 확률로 아웃
                             {
                                 Console.ForegroundColor = ConsoleColor.Red;
-                                Console.SetCursorPosition(3, 14);
+                                Console.SetCursorPosition(3, 10);
+                                Console.WriteLine("    _   _ __ _____  ");
+                                Console.SetCursorPosition(3, 11);
+                                Console.WriteLine("  ,' \\ /// //_  _/ ");
+                                Console.SetCursorPosition(3, 12);
+                                Console.WriteLine(" / o |/ U /  / /   ");
+                                Console.SetCursorPosition(3, 13);
+                                Console.WriteLine(" |_,' \\_,'  /_/     ");
+                                Console.SetCursorPosition(3, 16);
                                 Console.WriteLine("아웃!");
                                 Console.ResetColor();
                                 outs++;
@@ -214,6 +254,7 @@ namespace Baseball_Final
                 Console.WriteLine("게임 종료!");
                 Console.SetCursorPosition(8, 2);
                 Console.WriteLine($"최종 결과: {score} 점, {all} 타수, {homerun} 홈런, {outs} 아웃, {totalTrials} 볼넷, {ahnta} 안타");
+                Console.SetCursorPosition(3, 24);
 
                 // Google 스프레드시트에 데이터 전송
                 SendDataToGoogleSheet(playerID, $"{DateTime.Now.Month}월 {DateTime.Now.Day}일", $"{DateTime.Now.Hour}:{DateTime.Now.Minute}:{DateTime.Now.Second}", score, all, homerun, outs, totalTrials, ahnta);
@@ -268,6 +309,7 @@ namespace Baseball_Final
                         Console.SetCursorPosition(3, 20);
                         Console.WriteLine("Google 스프레드시트에 데이터가 전송되었습니다.");
                         Console.ResetColor();
+                        Console.SetCursorPosition(55, 24);
                     }
                     else
                     {
@@ -275,6 +317,7 @@ namespace Baseball_Final
                         Console.SetCursorPosition(3, 20);
                         Console.WriteLine($"Google 스프레드시트에 데이터 전송 실패! 상태 코드: {response.StatusCode}");
                         Console.ResetColor();
+                        Console.SetCursorPosition(55, 24);
                     }
                 }
             }
@@ -284,6 +327,7 @@ namespace Baseball_Final
                 Console.SetCursorPosition(3, 20);
                 Console.WriteLine($"Google 스프레드시트에 데이터 전송 중 오류 발생: {ex.Message}");
                 Console.ResetColor();
+                Console.SetCursorPosition(55, 24);
             }
         }
     }

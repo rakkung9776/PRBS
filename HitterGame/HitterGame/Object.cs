@@ -46,6 +46,12 @@ namespace HitterGame
             DrawBorder();
         }
 
+        public void Draw02()
+        {
+            Console.Clear();
+            DrawBorder02();
+        }
+
         private void DrawBorder()
         {
             Console.WriteLine(new string('=', width + 4));
@@ -56,6 +62,16 @@ namespace HitterGame
             Console.WriteLine(new string('=', width + 4));
             Console.SetCursorPosition(2, 22);
             Console.WriteLine("======================================================================");
+        }
+
+        private void DrawBorder02()
+        {
+            Console.WriteLine(new string('=', width + 4));
+            for (int i = 0; i < height; i++)
+            {
+                Console.WriteLine($"||{new string(' ', width)}||");
+            }
+            Console.WriteLine(new string('=', width + 4));
         }
 
     }
