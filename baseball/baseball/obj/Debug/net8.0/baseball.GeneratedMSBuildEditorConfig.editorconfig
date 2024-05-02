@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = baseball
-build_property.ProjectDir = C:\Jeky\2학년\데이터분석\baseball\baseball\
+build_property.ProjectDir = C:\KBG_GD\baseball\baseball\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
