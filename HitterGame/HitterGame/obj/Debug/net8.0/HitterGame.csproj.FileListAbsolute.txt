@@ -41,3 +41,13 @@ C:\KBG_GD\HitterGame\HitterGame\obj\Debug\net8.0\refint\HitterGame.dll
 C:\KBG_GD\HitterGame\HitterGame\obj\Debug\net8.0\HitterGame.pdb
 C:\KBG_GD\HitterGame\HitterGame\obj\Debug\net8.0\HitterGame.genruntimeconfig.cache
 C:\KBG_GD\HitterGame\HitterGame\obj\Debug\net8.0\ref\HitterGame.dll
+C:\KBG_GD\HitterGame\HitterGame\bin\Debug\net8.0\Google.Apis.dll
+C:\KBG_GD\HitterGame\HitterGame\bin\Debug\net8.0\Google.Apis.Auth.dll
+C:\KBG_GD\HitterGame\HitterGame\bin\Debug\net8.0\Google.Apis.Core.dll
+C:\KBG_GD\HitterGame\HitterGame\bin\Debug\net8.0\Google.Apis.Sheets.v4.dll
+C:\KBG_GD\HitterGame\HitterGame\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\KBG_GD\HitterGame\HitterGame\bin\Debug\net8.0\System.CodeDom.dll
+C:\KBG_GD\HitterGame\HitterGame\bin\Debug\net8.0\System.Management.dll
+C:\KBG_GD\HitterGame\HitterGame\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Management.dll
+C:\KBG_GD\HitterGame\HitterGame\obj\Debug\net8.0\HitterGame.csproj.AssemblyReference.cache
+C:\KBG_GD\HitterGame\HitterGame\obj\Debug\net8.0\HitterGame.csproj.Up2Date

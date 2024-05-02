@@ -1,9 +1,15 @@
-﻿using HitterGame;
-using System;
+﻿using System;
 using System.IO;
+using System.Collections.Generic;
 using System.Net.Http;
-using System.Text;
 using System.Threading.Tasks;
+using Google.Apis.Auth.OAuth2;
+using Google.Apis.Services;
+using Google.Apis.Sheets.v4;
+using Google.Apis.Util.Store;
+using System.Text;
+using Google.Apis.Sheets.v4.Data;
+using HitterGame;
 
 namespace Baseball_Final
 {
@@ -20,7 +26,7 @@ namespace Baseball_Final
             do
             {
                 do
-                {               
+                {
                     Console.Clear();
                     Console.WriteLine("\n===================================================");
                     Console.WriteLine($"\n\n{new string(' ', 16)}|~) _  _ _ |_  _ ||");
@@ -73,7 +79,6 @@ namespace Baseball_Final
                     else if (backToLobbyInput == "n" || backToLobbyInput == "no")
                     {
                         playAgain = true;
-
                     }
                     else
                     {
@@ -100,7 +105,6 @@ namespace Baseball_Final
 
         static void StartGame(string playerID)
         {
-
             do
             {
                 int ahnta = 0;
@@ -116,8 +120,7 @@ namespace Baseball_Final
                 bigWindow.DrawIntro();
                 Console.ReadKey();
 
-                // 게임이 종료되지 않는 동안 반복
-                while (outs < 1) // 아웃이 1회 이상 발생할 때까지 반복
+                while (outs < 1)
                 {
                     Console.Clear();
                     bigWindow.Draw();
@@ -133,17 +136,17 @@ namespace Baseball_Final
                     Console.SetCursorPosition(0, 4);
                     Console.WriteLine("==========================================================================");
 
-                    Console.SetCursorPosition(3, 8); // 메시지 출력 위치 변경
+                    Console.SetCursorPosition(3, 8);
 
                     bool swingBat = GetSwingBatDecision();
 
                     if (swingBat)
                     {
-                        Console.SetCursorPosition(3, 8); // 메시지 출력 위치 변경
+                        Console.SetCursorPosition(3, 8);
                         Console.WriteLine("배트를 휘두르셨습니다!");
-                        int hitOutcome = random.Next(1, 101); // 1부터 100 사이의 랜덤한 숫자
+                        int hitOutcome = random.Next(1, 101);
 
-                        if (hitOutcome <= 5) // 5% 확률로 홈런
+                        if (hitOutcome <= 5)
                         {
                             Console.ForegroundColor = ConsoleColor.Yellow;
                             Console.SetCursorPosition(13, 10);
@@ -160,7 +163,7 @@ namespace Baseball_Final
                             homerun++;
                             score += 1;
                         }
-                        else if (hitOutcome <= 70) // 65% 확률로 안타
+                        else if (hitOutcome <= 70)
                         {
                             Console.ForegroundColor = ConsoleColor.Green;
                             Console.SetCursorPosition(3, 10);
@@ -177,7 +180,7 @@ namespace Baseball_Final
                             ahnta++;
                             score += 0.25;
                         }
-                        else // 30% 확률로 아웃
+                        else
                         {
                             Console.ForegroundColor = ConsoleColor.Red;
                             Console.SetCursorPosition(3, 10);
@@ -200,11 +203,11 @@ namespace Baseball_Final
                         Console.SetCursorPosition(3, 8);
                         Console.WriteLine("배트를 휘두르지 않았습니다!");
 
-                        if (outs < 1) // 아웃이 아닌 상태에서만 볼넷 발생
+                        if (outs < 1)
                         {
-                            int hitOutcome = random.Next(1, 101); // 1부터 100 사이의 랜덤한 숫자
+                            int hitOutcome = random.Next(1, 101);
 
-                            if (hitOutcome <= 50) // 50% 확률로 볼넷
+                            if (hitOutcome <= 50)
                             {
                                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                                 Console.SetCursorPosition(3, 10);
@@ -218,10 +221,10 @@ namespace Baseball_Final
                                 Console.SetCursorPosition(3, 17);
                                 Console.WriteLine("볼넷!");
                                 Console.ResetColor();
-                                totalTrials++; // 볼넷 발생 시 볼넷 횟수 증가
+                                totalTrials++;
                                 score += 0.25;
                             }
-                            else // 50% 확률로 아웃
+                            else
                             {
                                 Console.ForegroundColor = ConsoleColor.Red;
                                 Console.SetCursorPosition(3, 10);
@@ -245,31 +248,27 @@ namespace Baseball_Final
                     Console.WriteLine("계속하려면 Enter 키를 누르세요...");
                     Console.SetCursorPosition(3, 24);
                     Console.ReadLine();
-
                 }
 
-                int all = ahnta + homerun + outs + totalTrials; // 총 타수 계산
-
+                // 게임 종료 후 최종 결과 출력
+                int all = ahnta + homerun + outs + totalTrials; // 전체 타석 수 계산
                 Console.SetCursorPosition(3, 18);
                 Console.WriteLine("게임 종료!");
                 Console.SetCursorPosition(8, 2);
                 Console.WriteLine($"최종 결과: {score} 점, {all} 타수, {homerun} 홈런, {outs} 아웃, {totalTrials} 볼넷, {ahnta} 안타");
                 Console.SetCursorPosition(3, 24);
 
-                // Google 스프레드시트에 데이터 전송
                 SendDataToGoogleSheet(playerID, $"{DateTime.Now.Month}월 {DateTime.Now.Day}일", $"{DateTime.Now.Hour}:{DateTime.Now.Minute}:{DateTime.Now.Second}", score, all, homerun, outs, totalTrials, ahnta);
 
             } while (AskToPlayAgain());
         }
 
-        // 사용자 입력 받아서 예 또는 아니오 반환
         static bool GetSwingBatDecision()
         {
             Console.SetCursorPosition(3, 6);
             Console.WriteLine("배트를 휘두르시겠습니까? (예: y / 아니오: n)");
             Console.SetCursorPosition(3, 24);
             string input = Console.ReadLine().ToLower();
-
 
             return input == "y" || input == "yes";
         }
@@ -287,39 +286,45 @@ namespace Baseball_Final
         {
             try
             {
-                // Google 스프레드시트로 전송할 URL
-                string url = "https://script.google.com/macros/s/AKfycby_NB11nqrGzW5T7lQ-UhMpNKVExpPsebaLUm7I2jB_hXqVvdKAbAEX0_Yo4s-6RQ7T/exec"; // AppsScript URL 적기 /exec
+                string jsonPath = "gamedata-202327036-4236f51ed467.json"; // OAuth2.0 클라이언트 JSON 파일 경로
+                string[] scopes = { SheetsService.Scope.Spreadsheets }; // Google Sheets API 사용 스코프
 
-                // 파라미터 설정
-                string parameters = $"?playerID={playerID}&logintime={logintime}&nowtime={nowtime}&score={score}&all={all}&homerun={homerun}&outs={outs}&totalTrials={totalTrials}&ahnta={ahnta}";
-
-                // 최종 URL 조합
-                string fullUrl = url + parameters;
-
-                // HttpClient 생성
-                using (HttpClient client = new HttpClient())
+                // 인증 파일에서 자격 증명을 가져옴
+                GoogleCredential credential;
+                using (var stream = new FileStream(jsonPath, FileMode.Open, FileAccess.Read))
                 {
-                    // GET 요청 보내기
-                    HttpResponseMessage response = await client.GetAsync(fullUrl);
-
-                    // 응답 결과 확인
-                    if (response.IsSuccessStatusCode)
-                    {
-                        Console.ForegroundColor = ConsoleColor.Magenta;
-                        Console.SetCursorPosition(3, 20);
-                        Console.WriteLine("Google 스프레드시트에 데이터가 전송되었습니다.");
-                        Console.ResetColor();
-                        Console.SetCursorPosition(55, 24);
-                    }
-                    else
-                    {
-                        Console.ForegroundColor = ConsoleColor.Magenta;
-                        Console.SetCursorPosition(3, 20);
-                        Console.WriteLine($"Google 스프레드시트에 데이터 전송 실패! 상태 코드: {response.StatusCode}");
-                        Console.ResetColor();
-                        Console.SetCursorPosition(55, 24);
-                    }
+                    credential = GoogleCredential.FromStream(stream)
+                        .CreateScoped(scopes);
                 }
+
+                // Google Sheets 서비스 생성
+                var service = new SheetsService(new BaseClientService.Initializer()
+                {
+                    HttpClientInitializer = credential,
+                    ApplicationName = "Baseball_Final"
+                });
+
+                // 스프레드시트 ID 및 시트 이름 설정
+                string spreadsheetId = "11aUuY8GS1kjUC4re-_sQolyFeq5SD7nZgAw6HDMY9eE"; // 스프레드시트 ID
+                string range = "GameData"; // 시트 이름 또는 범위
+
+                // 데이터 입력
+                var valueRange = new ValueRange();
+                var oblist = new List<object>() { playerID, logintime, nowtime, score, all, homerun, ahnta, totalTrials, outs };
+                valueRange.Values = new List<IList<object>> { oblist };
+
+                // 데이터를 스프레드시트에 추가
+                SpreadsheetsResource.ValuesResource.AppendRequest request =
+                    service.Spreadsheets.Values.Append(valueRange, spreadsheetId, range);
+                request.ValueInputOption = SpreadsheetsResource.ValuesResource.AppendRequest.ValueInputOptionEnum.RAW;
+                request.InsertDataOption = SpreadsheetsResource.ValuesResource.AppendRequest.InsertDataOptionEnum.INSERTROWS;
+                await request.ExecuteAsync();
+
+                Console.ForegroundColor = ConsoleColor.Magenta;
+                Console.SetCursorPosition(3, 20);
+                Console.WriteLine("Google 스프레드시트에 데이터가 전송되었습니다.");
+                Console.ResetColor();
+                Console.SetCursorPosition(55, 24);
             }
             catch (Exception ex)
             {
