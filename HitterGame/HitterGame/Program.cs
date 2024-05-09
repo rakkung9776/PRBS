@@ -10,33 +10,33 @@ using Google.Apis.Util.Store;
 using System.Text;
 using Google.Apis.Sheets.v4.Data;
 using HitterGame;
+using Newtonsoft.Json.Linq;
 
 namespace Baseball_Final
 {
     class Program
     {
+        static Dictionary<string, int> playerAValues = new Dictionary<string, int>(); // 아이디 별 J열 값 저장
         static void Main(string[] args)
         {
+            LoadPlayerData();
+
             Console.WriteLine("학번을 입력하세요.");
             string playerID = Console.ReadLine();
             bool playAgain = false;
             string choice;
             bool lobbyMessageShown = false;
 
+            DrawingObject bigWindow = new DrawingObject(70, 26);
+
             do
             {
                 do
                 {
                     Console.Clear();
-                    Console.WriteLine("\n===================================================");
-                    Console.WriteLine($"\n\n{new string(' ', 16)}|~) _  _ _ |_  _ ||");
-                    Console.WriteLine($"{new string(' ', 16)}|_)(_|_\\(/_|_)(_|||");
-                    Console.WriteLine($"\n\n{new string(' ', 19)}1. 게임 시작");
-                    Console.WriteLine($"{new string(' ', 19)}2. 게임 설명");
-                    Console.WriteLine($"{new string(' ', 19)}3. 게임 종료");
-                    Console.WriteLine("\n\n===================================================\n\n");
+                    bigWindow.MainDraw();
 
-                    Console.Write("\n메뉴를 선택하세요: ");
+                    Console.SetCursorPosition(37, 19);
                     choice = Console.ReadLine();
 
                     switch (choice)
@@ -65,7 +65,6 @@ namespace Baseball_Final
                 {
                     if (!lobbyMessageShown) // 메시지가 아직 출력되지 않았다면
                     {
-                        Console.Write("\n로비로 돌아가시겠습니까? (예: y / 아니오: n): ");
                         lobbyMessageShown = true; // 메시지 출력 여부를 true로 설정하여 한 번만 출력되도록 합니다.
                     }
 
@@ -78,29 +77,63 @@ namespace Baseball_Final
                     }
                     else if (backToLobbyInput == "n" || backToLobbyInput == "no")
                     {
+                        Console.Clear();
                         playAgain = true;
+                        ShowGameInstructions();
                     }
                     else
                     {
-
+                        Console.Clear();
+                        playAgain = true;
+                        ShowGameInstructions();
                     }
                 } while (true);
 
             } while (playAgain);
         }
 
+        static void LoadPlayerData()
+        {
+            string dataFilePath = "player_data.txt";
+
+            if (File.Exists(dataFilePath))
+            {
+                // 파일이 존재시 데이터를 불러옴.
+                string[] lines = File.ReadAllLines(dataFilePath);
+                foreach (string line in lines)
+                {
+                    string[] parts = line.Split(',');
+                    if (parts.Length == 2)
+                    {
+                        string playerID = parts[0];
+                        int aValue = int.Parse(parts[1]);
+                        playerAValues[playerID] = aValue;
+                    }
+                }
+            }
+        }
+
         static void ShowGameInstructions()
         {
             Console.Clear();
-            Console.WriteLine("\n===================================================");
-            Console.WriteLine($"\n{new string(' ', 13)}_  _  _ _  _    _   | _  _");
-            Console.WriteLine($"{new string(' ', 12)}(_|(_|| | |(/_  | |_||(/__\\");
-            Console.WriteLine($"{new string(' ', 12)} _|                        ");
-            Console.WriteLine($"\n\n\n{new string(' ', 3)}1. 플레이어는 타자의 시점에서 게임을 진행한다.");
-            Console.WriteLine($"{new string(' ', 3)}2. 게임이 시작되면 4번의 타석에 설 수 있으며");
-            Console.WriteLine($"{new string(' ', 6)}선택지를 통해 투수의 공을 예상하여 공을");
-            Console.WriteLine($"{new string(' ', 6)}타격하는 방식이다.");
-            Console.WriteLine("===================================================\n\n");
+            DrawingObject bigWindow = new DrawingObject(70, 26);
+            bigWindow.Draw02();
+
+            Console.SetCursorPosition(28, 4);
+            Console.WriteLine("._ _  _ ._     _ |");
+            Console.SetCursorPosition(28, 5);
+            Console.WriteLine("| | |(_|| ||_|(_||");
+            Console.SetCursorPosition(13, 8);
+            Console.WriteLine($"1. 플레이어는 타자의 시점에서 게임을 진행한다.");
+            Console.SetCursorPosition(13, 9);
+            Console.WriteLine($"2. 게임이 시작되면 4번의 타석에 설 수 있으며");
+            Console.SetCursorPosition(16, 10);
+            Console.WriteLine($"선택지를 통해 투수의 공을 예상하여 공을");
+            Console.SetCursorPosition(16, 11);
+            Console.WriteLine($"타격하는 방식이다.");
+
+            Console.SetCursorPosition(13, 21);
+            Console.Write("로비로 돌아가시겠습니까? (예: y / 아니오: n): ");
         }
 
         static void StartGame(string playerID)
@@ -247,7 +280,7 @@ namespace Baseball_Final
                     Console.SetCursorPosition(3, 24);
                     Console.WriteLine("계속하려면 Enter 키를 누르세요...");
                     Console.SetCursorPosition(3, 24);
-                    Console.ReadLine();
+                    Console.ReadKey();
                 }
 
                 // 게임 종료 후 최종 결과 출력
@@ -261,6 +294,8 @@ namespace Baseball_Final
                 SendDataToGoogleSheet(playerID, $"{DateTime.Now.Month}월 {DateTime.Now.Day}일", $"{DateTime.Now.Hour}:{DateTime.Now.Minute}:{DateTime.Now.Second}", score, all, homerun, outs, totalTrials, ahnta);
 
             } while (AskToPlayAgain());
+
+            SavePlayerData(); // 게임 종료 후 플레이어 데이터 저장
         }
 
         static bool GetSwingBatDecision()
@@ -269,6 +304,7 @@ namespace Baseball_Final
             Console.WriteLine("배트를 휘두르시겠습니까? (예: y / 아니오: n)");
             Console.SetCursorPosition(3, 24);
             string input = Console.ReadLine().ToLower();
+
 
             return input == "y" || input == "yes";
         }
@@ -306,11 +342,11 @@ namespace Baseball_Final
 
                 // 스프레드시트 ID 및 시트 이름 설정
                 string spreadsheetId = "11aUuY8GS1kjUC4re-_sQolyFeq5SD7nZgAw6HDMY9eE"; // 스프레드시트 ID
-                string range = "GameData"; // 시트 이름 또는 범위
+                string range = "GameData!A2"; // 시트 이름 또는 범위
 
                 // 데이터 입력
                 var valueRange = new ValueRange();
-                var oblist = new List<object>() { playerID, logintime, nowtime, score, all, homerun, ahnta, totalTrials, outs };
+                var oblist = new List<object>() { GetNextJValue(playerID), playerID, logintime, nowtime, score, all, homerun, ahnta, totalTrials, outs };
                 valueRange.Values = new List<IList<object>> { oblist };
 
                 // 데이터를 스프레드시트에 추가
@@ -334,6 +370,30 @@ namespace Baseball_Final
                 Console.ResetColor();
                 Console.SetCursorPosition(55, 24);
             }
+        }
+
+        static void SavePlayerData()
+        {
+            string dataFilePath = "player_data.txt";
+
+            // 플레이어 데이터를 파일에 저장합니다.
+            using (StreamWriter writer = new StreamWriter(dataFilePath))
+            {
+                foreach (var kvp in playerAValues)
+                {
+                    writer.WriteLine($"{kvp.Key},{kvp.Value}");
+                }
+            }
+        }
+
+        static int GetNextJValue(string playerID)
+        {
+            if (!playerAValues.ContainsKey(playerID))
+            {
+                playerAValues[playerID] = 0; // 처음 값을 설정합니다.
+            }
+
+            return ++playerAValues[playerID];
         }
     }
 }
