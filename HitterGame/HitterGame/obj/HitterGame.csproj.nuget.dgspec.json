@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\KBG_GD\\HitterGame\\HitterGame\\HitterGame.csproj": {}
+    "C:\\Jeky\\2학년\\데이터분석\\HitterGame\\HitterGame\\HitterGame.csproj": {}
   },
   "projects": {
-    "C:\\KBG_GD\\HitterGame\\HitterGame\\HitterGame.csproj": {
+    "C:\\Jeky\\2학년\\데이터분석\\HitterGame\\HitterGame\\HitterGame.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\KBG_GD\\HitterGame\\HitterGame\\HitterGame.csproj",
+        "projectUniqueName": "C:\\Jeky\\2학년\\데이터분석\\HitterGame\\HitterGame\\HitterGame.csproj",
         "projectName": "HitterGame",
-        "projectPath": "C:\\KBG_GD\\HitterGame\\HitterGame\\HitterGame.csproj",
-        "packagesPath": "C:\\Users\\KBG\\.nuget\\packages\\",
-        "outputPath": "C:\\KBG_GD\\HitterGame\\HitterGame\\obj\\",
+        "projectPath": "C:\\Jeky\\2학년\\데이터분석\\HitterGame\\HitterGame\\HitterGame.csproj",
+        "packagesPath": "C:\\Users\\Jeky\\.nuget\\packages\\",
+        "outputPath": "C:\\Jeky\\2학년\\데이터분석\\HitterGame\\HitterGame\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\KBG\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Jeky\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -48,6 +52,10 @@
             "Google.Apis.Sheets.v4": {
               "target": "Package",
               "version": "[1.68.0.3393, )"
+            },
+            "NAudio": {
+              "target": "Package",
+              "version": "[2.2.1, )"
             }
           },
           "imports": [
@@ -66,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

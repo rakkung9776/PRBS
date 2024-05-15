@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\KBG_GD\\HitterGame\\",
+  "WorkspaceRootPath": "C:\\Jeky\\2\uD559\uB144\\\uB370\uC774\uD130\uBD84\uC11D\\HitterGame\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{916A82C0-936C-40A2-8445-A4033F7EFC47}|HitterGame\\HitterGame.csproj|c:\\kbg_gd\\hittergame\\hittergame\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{916A82C0-936C-40A2-8445-A4033F7EFC47}|HitterGame\\HitterGame.csproj|c:\\jeky\\2\uD559\uB144\\\uB370\uC774\uD130\uBD84\uC11D\\hittergame\\hittergame\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{916A82C0-936C-40A2-8445-A4033F7EFC47}|HitterGame\\HitterGame.csproj|solutionrelative:hittergame\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{916A82C0-936C-40A2-8445-A4033F7EFC47}|HitterGame\\HitterGame.csproj|c:\\kbg_gd\\hittergame\\hittergame\\object.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{916A82C0-936C-40A2-8445-A4033F7EFC47}|HitterGame\\HitterGame.csproj|c:\\jeky\\2\uD559\uB144\\\uB370\uC774\uD130\uBD84\uC11D\\hittergame\\hittergame\\object.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{916A82C0-936C-40A2-8445-A4033F7EFC47}|HitterGame\\HitterGame.csproj|solutionrelative:hittergame\\object.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -24,11 +24,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\KBG_GD\\HitterGame\\HitterGame\\Program.cs",
+              "DocumentMoniker": "C:\\Jeky\\2\uD559\uB144\\\uB370\uC774\uD130\uBD84\uC11D\\HitterGame\\HitterGame\\Program.cs",
               "RelativeDocumentMoniker": "HitterGame\\Program.cs",
-              "ToolTip": "C:\\KBG_GD\\HitterGame\\HitterGame\\Program.cs",
+              "ToolTip": "C:\\Jeky\\2\uD559\uB144\\\uB370\uC774\uD130\uBD84\uC11D\\HitterGame\\HitterGame\\Program.cs",
               "RelativeToolTip": "HitterGame\\Program.cs",
-              "ViewState": "AQIAAHABAAAAAAAAAAAswEABAAAJAAAA",
+              "ViewState": "AQIAAJoBAAAAAAAAAAAvwKkBAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-02T14:39:18.36Z",
               "IsPinned": true,
@@ -38,14 +38,15 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Object.cs",
-              "DocumentMoniker": "C:\\KBG_GD\\HitterGame\\HitterGame\\Object.cs",
+              "DocumentMoniker": "C:\\Jeky\\2\uD559\uB144\\\uB370\uC774\uD130\uBD84\uC11D\\HitterGame\\HitterGame\\Object.cs",
               "RelativeDocumentMoniker": "HitterGame\\Object.cs",
-              "ToolTip": "C:\\KBG_GD\\HitterGame\\HitterGame\\Object.cs",
+              "ToolTip": "C:\\Jeky\\2\uD559\uB144\\\uB370\uC774\uD130\uBD84\uC11D\\HitterGame\\HitterGame\\Object.cs",
               "RelativeToolTip": "HitterGame\\Object.cs",
-              "ViewState": "AQIAAGIAAAAAAAAAAAAAwJcAAAAAAAAA",
+              "ViewState": "AQIAAGAAAAAAAAAAAAAiwG0AAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-27T11:00:28.91Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             }
           ]
         }

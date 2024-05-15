@@ -11,6 +11,8 @@ using System.Text;
 using Google.Apis.Sheets.v4.Data;
 using HitterGame;
 using Newtonsoft.Json.Linq;
+using System.Threading;
+using NAudio.Wave;
 
 namespace Baseball_Final
 {
@@ -27,6 +29,8 @@ namespace Baseball_Final
             string choice;
             bool lobbyMessageShown = false;
 
+
+            Task backgroundMusicTask = Task.Run(() => PlayBackgroundMusicAsync());
             DrawingObject bigWindow = new DrawingObject(70, 26);
 
             do
@@ -90,6 +94,7 @@ namespace Baseball_Final
                 } while (true);
 
             } while (playAgain);
+        
         }
 
         static void LoadPlayerData()
@@ -395,5 +400,42 @@ namespace Baseball_Final
 
             return ++playerAValues[playerID];
         }
+
+        static async Task PlayBackgroundMusicAsync()
+        {
+            try
+            {
+                string executablePath = AppDomain.CurrentDomain.BaseDirectory;
+                string backgroundMusicPath = Path.Combine(executablePath, "Background.wav");
+
+                while (true)
+                {
+                    if (File.Exists(backgroundMusicPath))
+                    {
+                        using (var audioFile = new AudioFileReader(backgroundMusicPath))
+                        using (var outputDevice = new WaveOutEvent())
+                        {
+                            outputDevice.Init(audioFile);
+                            outputDevice.Play();
+
+                            // 재생이 완료될 때까지 대기
+                            while (outputDevice.PlaybackState == PlaybackState.Playing)
+                            {
+                                Thread.Sleep(1000);
+                            }
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("배경 음악 파일을 찾을 수 없습니다.");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"배경 음악을 재생하는 중 오류 발생: {ex.Message}");
+            }
+        }
+
     }
 }

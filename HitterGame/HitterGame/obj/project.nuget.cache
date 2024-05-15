@@ -1,16 +1,26 @@
 {
   "version": 2,
-  "dgSpecHash": "AD5jIK8rFvCh/xnzqYuzPOyIrGfwHTXygL9FLrH4y22f5VauiFS11kDGMC+LiiefxaHskmRFkkwBk5mk2rhFww==",
+  "dgSpecHash": "OxDwLjMdb6RH9VWmRkSOKHK3A9d8IBgPG3zR8IOD4sMd6VZgM8OMaOTGAnTpnx7cWhTcJrePgcyRVufd6BjJpA==",
   "success": true,
-  "projectFilePath": "C:\\KBG_GD\\HitterGame\\HitterGame\\HitterGame.csproj",
+  "projectFilePath": "C:\\Jeky\\2학년\\데이터분석\\HitterGame\\HitterGame\\HitterGame.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\KBG\\.nuget\\packages\\google.apis\\1.68.0\\google.apis.1.68.0.nupkg.sha512",
-    "C:\\Users\\KBG\\.nuget\\packages\\google.apis.auth\\1.68.0\\google.apis.auth.1.68.0.nupkg.sha512",
-    "C:\\Users\\KBG\\.nuget\\packages\\google.apis.core\\1.68.0\\google.apis.core.1.68.0.nupkg.sha512",
-    "C:\\Users\\KBG\\.nuget\\packages\\google.apis.sheets.v4\\1.68.0.3393\\google.apis.sheets.v4.1.68.0.3393.nupkg.sha512",
-    "C:\\Users\\KBG\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
-    "C:\\Users\\KBG\\.nuget\\packages\\system.codedom\\7.0.0\\system.codedom.7.0.0.nupkg.sha512",
-    "C:\\Users\\KBG\\.nuget\\packages\\system.management\\7.0.2\\system.management.7.0.2.nupkg.sha512"
+    "C:\\Users\\Jeky\\.nuget\\packages\\google.apis\\1.68.0\\google.apis.1.68.0.nupkg.sha512",
+    "C:\\Users\\Jeky\\.nuget\\packages\\google.apis.auth\\1.68.0\\google.apis.auth.1.68.0.nupkg.sha512",
+    "C:\\Users\\Jeky\\.nuget\\packages\\google.apis.core\\1.68.0\\google.apis.core.1.68.0.nupkg.sha512",
+    "C:\\Users\\Jeky\\.nuget\\packages\\google.apis.sheets.v4\\1.68.0.3393\\google.apis.sheets.v4.1.68.0.3393.nupkg.sha512",
+    "C:\\Users\\Jeky\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "C:\\Users\\Jeky\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
+    "C:\\Users\\Jeky\\.nuget\\packages\\naudio\\2.2.1\\naudio.2.2.1.nupkg.sha512",
+    "C:\\Users\\Jeky\\.nuget\\packages\\naudio.asio\\2.2.1\\naudio.asio.2.2.1.nupkg.sha512",
+    "C:\\Users\\Jeky\\.nuget\\packages\\naudio.core\\2.2.1\\naudio.core.2.2.1.nupkg.sha512",
+    "C:\\Users\\Jeky\\.nuget\\packages\\naudio.midi\\2.2.1\\naudio.midi.2.2.1.nupkg.sha512",
+    "C:\\Users\\Jeky\\.nuget\\packages\\naudio.wasapi\\2.2.1\\naudio.wasapi.2.2.1.nupkg.sha512",
+    "C:\\Users\\Jeky\\.nuget\\packages\\naudio.winmm\\2.2.1\\naudio.winmm.2.2.1.nupkg.sha512",
+    "C:\\Users\\Jeky\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\Jeky\\.nuget\\packages\\system.codedom\\7.0.0\\system.codedom.7.0.0.nupkg.sha512",
+    "C:\\Users\\Jeky\\.nuget\\packages\\system.management\\7.0.2\\system.management.7.0.2.nupkg.sha512",
+    "C:\\Users\\Jeky\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",
+    "C:\\Users\\Jeky\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512"
   ],
   "logs": []
 }
