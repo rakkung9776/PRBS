@@ -36,6 +36,7 @@ namespace Baseball_Final
                     Console.Clear();
                     bigWindow.MainDraw();
 
+                    Console.CursorVisible = false;
                     Console.SetCursorPosition(37, 19);
                     choice = Console.ReadLine();
 
@@ -43,14 +44,36 @@ namespace Baseball_Final
                     {
                         case "1":
                             StartGame(playerID);
-                            if (!AskToPlayAgain())
-                            {
-                                Console.WriteLine("게임을 종료합니다.");
-                                return;
-                            }
                             break;
                         case "2":
                             ShowGameInstructions();
+                            do
+                            {
+                                if (!lobbyMessageShown) // 메시지가 아직 출력되지 않았다면
+                                {
+                                    lobbyMessageShown = true; // 메시지 출력 여부를 true로 설정하여 한 번만 출력되도록 합니다.
+                                }
+
+                                string backToLobbyInput = Console.ReadLine().ToLower();
+                                if (backToLobbyInput == "y" || backToLobbyInput == "yes")
+                                {
+                                    playAgain = true;
+                                    lobbyMessageShown = false;
+                                    break; // 루프를 종료하고 게임 메뉴로 돌아감
+                                }
+                                else if (backToLobbyInput == "n" || backToLobbyInput == "no")
+                                {
+                                    Console.Clear();
+                                    playAgain = true;
+                                    ShowGameInstructions();
+                                }
+                                else
+                                {
+                                    Console.Clear();
+                                    playAgain = true;
+                                    ShowGameInstructions();
+                                }
+                            } while (true);
                             break;
                         case "3":
                             Console.WriteLine("게임을 종료합니다.");
@@ -61,33 +84,6 @@ namespace Baseball_Final
                     }
                 } while (choice != "1" && choice != "2" && choice != "3");
 
-                do
-                {
-                    if (!lobbyMessageShown) // 메시지가 아직 출력되지 않았다면
-                    {
-                        lobbyMessageShown = true; // 메시지 출력 여부를 true로 설정하여 한 번만 출력되도록 합니다.
-                    }
-
-                    string backToLobbyInput = Console.ReadLine().ToLower();
-                    if (backToLobbyInput == "y" || backToLobbyInput == "yes")
-                    {
-                        playAgain = true;
-                        lobbyMessageShown = false;
-                        break; // 루프를 종료하고 게임 메뉴로 돌아감
-                    }
-                    else if (backToLobbyInput == "n" || backToLobbyInput == "no")
-                    {
-                        Console.Clear();
-                        playAgain = true;
-                        ShowGameInstructions();
-                    }
-                    else
-                    {
-                        Console.Clear();
-                        playAgain = true;
-                        ShowGameInstructions();
-                    }
-                } while (true);
 
             } while (playAgain);
         }
@@ -277,10 +273,11 @@ namespace Baseball_Final
                         }
                     }
 
+                    Console.CursorVisible = false;
                     Console.SetCursorPosition(3, 24);
                     Console.WriteLine("계속하려면 Enter 키를 누르세요...");
                     Console.SetCursorPosition(3, 24);
-                    Console.ReadKey();
+                    Console.ReadLine();
                 }
 
                 // 게임 종료 후 최종 결과 출력
@@ -315,7 +312,18 @@ namespace Baseball_Final
             Console.WriteLine("게임을 다시 시작하시겠습니까? (예: y / 아니오: n) : ");
             Console.SetCursorPosition(55, 24);
             string input = Console.ReadLine().ToLower();
-            return input == "y" || input == "yes";
+
+            if (input == "y" || input == "yes")
+            {
+                return true;
+            }
+            else if (input == "n" || input == "no")
+            {
+                Console.WriteLine("게임을 종료합니다.");
+                return false;
+            }
+
+            return true;
         }
 
         static async Task SendDataToGoogleSheet(string playerID, string logintime, string nowtime, double score, int all, int homerun, int outs, int totalTrials, int ahnta)
