@@ -11,6 +11,8 @@ using System.Text;
 using Google.Apis.Sheets.v4.Data;
 using HitterGame;
 using Newtonsoft.Json.Linq;
+using System.Threading;
+using NAudio.Wave;
 
 namespace Baseball_Final
 {
@@ -27,6 +29,7 @@ namespace Baseball_Final
             string choice;
             bool lobbyMessageShown = false;
 
+            Task backgroundMusicTask = Task.Run(() => PlayBackgroundMusicAsync());
             DrawingObject bigWindow = new DrawingObject(70, 26);
 
             do
@@ -85,6 +88,7 @@ namespace Baseball_Final
                 } while (choice != "1" && choice != "2" && choice != "3");
 
 
+
             } while (playAgain);
         }
 
@@ -113,23 +117,7 @@ namespace Baseball_Final
         {
             Console.Clear();
             DrawingObject bigWindow = new DrawingObject(70, 26);
-            bigWindow.Draw02();
-
-            Console.SetCursorPosition(28, 4);
-            Console.WriteLine("._ _  _ ._     _ |");
-            Console.SetCursorPosition(28, 5);
-            Console.WriteLine("| | |(_|| ||_|(_||");
-            Console.SetCursorPosition(13, 8);
-            Console.WriteLine($"1. 플레이어는 타자의 시점에서 게임을 진행한다.");
-            Console.SetCursorPosition(13, 9);
-            Console.WriteLine($"2. 게임이 시작되면 4번의 타석에 설 수 있으며");
-            Console.SetCursorPosition(16, 10);
-            Console.WriteLine($"선택지를 통해 투수의 공을 예상하여 공을");
-            Console.SetCursorPosition(16, 11);
-            Console.WriteLine($"타격하는 방식이다.");
-
-            Console.SetCursorPosition(13, 21);
-            Console.Write("로비로 돌아가시겠습니까? (예: y / 아니오: n): ");
+            bigWindow.manualDraw();            
         }
 
         static void StartGame(string playerID)
@@ -365,8 +353,8 @@ namespace Baseball_Final
                 await request.ExecuteAsync();
 
                 Console.ForegroundColor = ConsoleColor.Magenta;
-                Console.SetCursorPosition(3, 20);
-                Console.WriteLine("Google 스프레드시트에 데이터가 전송되었습니다.");
+                //Console.SetCursorPosition(3, 20);
+                //Console.WriteLine("Google 스프레드시트에 데이터가 전송되었습니다.");
                 Console.ResetColor();
                 Console.SetCursorPosition(55, 24);
             }
@@ -402,6 +390,42 @@ namespace Baseball_Final
             }
 
             return ++playerAValues[playerID];
+        }
+
+        static async Task PlayBackgroundMusicAsync()
+        {
+            try
+            {
+                string executablePath = AppDomain.CurrentDomain.BaseDirectory;
+                string backgroundMusicPath = Path.Combine(executablePath, "Background.wav");
+
+                while (true)
+                {
+                    if (File.Exists(backgroundMusicPath))
+                    {
+                        using (var audioFile = new AudioFileReader(backgroundMusicPath))
+                        using (var outputDevice = new WaveOutEvent())
+                        {
+                            outputDevice.Init(audioFile);
+                            outputDevice.Play();
+
+                            // 재생이 완료될 때까지 대기
+                            while (outputDevice.PlaybackState == PlaybackState.Playing)
+                            {
+                                Thread.Sleep(1000);
+                            }
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("배경 음악 파일을 찾을 수 없습니다.");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"배경 음악을 재생하는 중 오류 발생: {ex.Message}");
+            }
         }
     }
 }

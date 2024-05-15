@@ -51,3 +51,9 @@ C:\KBG_GD\HitterGame\HitterGame\bin\Debug\net8.0\System.Management.dll
 C:\KBG_GD\HitterGame\HitterGame\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Management.dll
 C:\KBG_GD\HitterGame\HitterGame\obj\Debug\net8.0\HitterGame.csproj.AssemblyReference.cache
 C:\KBG_GD\HitterGame\HitterGame\obj\Debug\net8.0\HitterGame.csproj.Up2Date
+C:\KBG_GD\HitterGame\HitterGame\bin\Debug\net8.0\NAudio.dll
+C:\KBG_GD\HitterGame\HitterGame\bin\Debug\net8.0\NAudio.Asio.dll
+C:\KBG_GD\HitterGame\HitterGame\bin\Debug\net8.0\NAudio.Core.dll
+C:\KBG_GD\HitterGame\HitterGame\bin\Debug\net8.0\NAudio.Midi.dll
+C:\KBG_GD\HitterGame\HitterGame\bin\Debug\net8.0\NAudio.Wasapi.dll
+C:\KBG_GD\HitterGame\HitterGame\bin\Debug\net8.0\NAudio.WinMM.dll

@@ -72,13 +72,28 @@ namespace HitterGame
             MainView();
         }
 
-        public void manualView()
+        public void manualDraw()
         {
             Console.Clear();
             DrawBorder02();
-            MainView();
+
+            Console.SetCursorPosition(28, 4);
+            Console.WriteLine("._ _  _ ._     _ |");
+            Console.SetCursorPosition(28, 5);
+            Console.WriteLine("| | |(_|| ||_|(_||");
+            Console.SetCursorPosition(3, 9);
+            Console.WriteLine($"1. 플레이어는 타자의 시점에서 게임을 진행한다.");
+            Console.SetCursorPosition(3, 11);
+            Console.WriteLine($"2. 게임이 시작되면 아웃이 되지 않는 이상 계속 타석에 설 수 있다.");
+            Console.SetCursorPosition(3, 13);
+            Console.WriteLine($"3. 각 카운트당 점수는 안타: 0.25 / 홈런: 1 / 볼넷:0.25 / 아웃: - 1");
+
+            Console.SetCursorPosition(13, 21);
+            Console.Write("로비로 돌아가시겠습니까? (예: y / 아니오: n): ");
+
         }
 
+        //부속품
         private void DrawBorder()
         {
             Console.WriteLine(new string('=', width + 4));
@@ -101,26 +116,7 @@ namespace HitterGame
             Console.WriteLine(new string('=', width + 4));
         }
 
-        private void manual()
-        {
-            Console.Clear();
-
-            Console.SetCursorPosition(28, 4);
-            Console.WriteLine("._ _  _ ._     _ |");
-            Console.SetCursorPosition(28, 5);
-            Console.WriteLine("| | |(_|| ||_|(_||");
-            Console.SetCursorPosition(13, 8);
-            Console.WriteLine($"1. 플레이어는 타자의 시점에서 게임을 진행한다.");
-            Console.SetCursorPosition(13, 9);
-            Console.WriteLine($"2. 게임이 시작되면 4번의 타석에 설 수 있으며");
-            Console.SetCursorPosition(16, 10);
-            Console.WriteLine($"선택지를 통해 투수의 공을 예상하여 공을");
-            Console.SetCursorPosition(16, 11);
-            Console.WriteLine($"타격하는 방식이다.");
-
-            Console.SetCursorPosition(13, 21);
-            Console.Write("로비로 돌아가시겠습니까? (예: y / 아니오: n): ");
-        }
+        
         private void MainView()
         {
             Console.SetCursorPosition(3, 3);

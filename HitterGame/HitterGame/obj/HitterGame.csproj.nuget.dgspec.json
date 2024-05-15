@@ -48,6 +48,10 @@
             "Google.Apis.Sheets.v4": {
               "target": "Package",
               "version": "[1.68.0.3393, )"
+            },
+            "NAudio": {
+              "target": "Package",
+              "version": "[2.2.1, )"
             }
           },
           "imports": [
