@@ -219,6 +219,9 @@ namespace Baseball_Final
                             Console.ResetColor();
                             outs++;
                             score -= 1;
+
+                            //아웃 사운드 재생
+                            Playoutsound();
                         }
                     }
                     else
@@ -246,6 +249,9 @@ namespace Baseball_Final
                                 Console.ResetColor();
                                 totalTrials++;
                                 score += 0.25;
+
+                                //볼넷 사운드 재생
+                                Playfourballsound();
                             }
                             else
                             {
@@ -263,6 +269,9 @@ namespace Baseball_Final
                                 Console.ResetColor();
                                 outs++;
                                 score -= 1;
+
+                                //아웃 사운드 재생
+                                Playoutsound();
                             }
                         }
                     }
@@ -474,6 +483,66 @@ namespace Baseball_Final
         {
             string executablePath = AppDomain.CurrentDomain.BaseDirectory;
             string ahntaSoundPath = Path.Combine(executablePath, "Anta.wav");
+
+            if (File.Exists(ahntaSoundPath))
+            {
+                try
+                {
+                    using (var audioFile = new AudioFileReader(ahntaSoundPath))
+                    using (var outputDevice = new WaveOutEvent())
+                    {
+                        outputDevice.Init(audioFile);
+                        outputDevice.Play();
+                        while (outputDevice.PlaybackState == PlaybackState.Playing)
+                        {
+                            Thread.Sleep(100);
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"안타 사운드 재생 중 오류 발생: {ex.Message}");
+                }
+            }
+            else
+            {
+                Console.WriteLine("안타 사운드 파일을 찾을 수 없습니다.");
+            }
+        }
+        static void Playoutsound()
+        {
+            string executablePath = AppDomain.CurrentDomain.BaseDirectory;
+            string ahntaSoundPath = Path.Combine(executablePath, "outS2.wav");
+
+            if (File.Exists(ahntaSoundPath))
+            {
+                try
+                {
+                    using (var audioFile = new AudioFileReader(ahntaSoundPath))
+                    using (var outputDevice = new WaveOutEvent())
+                    {
+                        outputDevice.Init(audioFile);
+                        outputDevice.Play();
+                        while (outputDevice.PlaybackState == PlaybackState.Playing)
+                        {
+                            Thread.Sleep(100);
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"안타 사운드 재생 중 오류 발생: {ex.Message}");
+                }
+            }
+            else
+            {
+                Console.WriteLine("안타 사운드 파일을 찾을 수 없습니다.");
+            }
+        }
+        static void Playfourballsound()
+        {
+            string executablePath = AppDomain.CurrentDomain.BaseDirectory;
+            string ahntaSoundPath = Path.Combine(executablePath, "fourball.wav");
 
             if (File.Exists(ahntaSoundPath))
             {

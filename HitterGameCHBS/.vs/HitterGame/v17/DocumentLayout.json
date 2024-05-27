@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Rakku\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\HitterGame22\\",
+  "WorkspaceRootPath": "D:\\qnstjr\\HitterGameCHBS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{916A82C0-936C-40A2-8445-A4033F7EFC47}|HitterGame\\HitterGame.csproj|c:\\users\\rakku\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\hittergame22\\hittergame\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{916A82C0-936C-40A2-8445-A4033F7EFC47}|HitterGame\\HitterGame.csproj|d:\\qnstjr\\hittergamechbs\\hittergame\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{916A82C0-936C-40A2-8445-A4033F7EFC47}|HitterGame\\HitterGame.csproj|solutionrelative:hittergame\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{916A82C0-936C-40A2-8445-A4033F7EFC47}|HitterGame\\HitterGame.csproj|c:\\users\\rakku\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\hittergame22\\hittergame\\object.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{916A82C0-936C-40A2-8445-A4033F7EFC47}|HitterGame\\HitterGame.csproj|d:\\qnstjr\\hittergamechbs\\hittergame\\object.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{916A82C0-936C-40A2-8445-A4033F7EFC47}|HitterGame\\HitterGame.csproj|solutionrelative:hittergame\\object.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -24,11 +24,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Rakku\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\HitterGame22\\HitterGame\\Program.cs",
+              "DocumentMoniker": "D:\\qnstjr\\HitterGameCHBS\\HitterGame\\Program.cs",
               "RelativeDocumentMoniker": "HitterGame\\Program.cs",
-              "ToolTip": "C:\\Users\\Rakku\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\HitterGame22\\HitterGame\\Program.cs",
+              "ToolTip": "D:\\qnstjr\\HitterGameCHBS\\HitterGame\\Program.cs",
               "RelativeToolTip": "HitterGame\\Program.cs",
-              "ViewState": "AQIAANQBAAAAAAAAAAAuwN0BAAAsAAAA",
+              "ViewState": "AQIAAEwAAAAAAAAAAAAAwOIBAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-02T14:39:18.36Z",
               "IsPinned": true,
@@ -38,9 +38,9 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Object.cs",
-              "DocumentMoniker": "C:\\Users\\Rakku\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\HitterGame22\\HitterGame\\Object.cs",
+              "DocumentMoniker": "D:\\qnstjr\\HitterGameCHBS\\HitterGame\\Object.cs",
               "RelativeDocumentMoniker": "HitterGame\\Object.cs",
-              "ToolTip": "C:\\Users\\Rakku\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\HitterGame22\\HitterGame\\Object.cs",
+              "ToolTip": "D:\\qnstjr\\HitterGameCHBS\\HitterGame\\Object.cs",
               "RelativeToolTip": "HitterGame\\Object.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAIoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

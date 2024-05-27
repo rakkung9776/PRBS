@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Rakku\\OneDrive\\바탕 화면\\HitterGame22\\HitterGame\\HitterGame.csproj": {}
+    "D:\\qnstjr\\HitterGameCHBS\\HitterGame\\HitterGame.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Rakku\\OneDrive\\바탕 화면\\HitterGame22\\HitterGame\\HitterGame.csproj": {
+    "D:\\qnstjr\\HitterGameCHBS\\HitterGame\\HitterGame.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Rakku\\OneDrive\\바탕 화면\\HitterGame22\\HitterGame\\HitterGame.csproj",
+        "projectUniqueName": "D:\\qnstjr\\HitterGameCHBS\\HitterGame\\HitterGame.csproj",
         "projectName": "HitterGame",
-        "projectPath": "C:\\Users\\Rakku\\OneDrive\\바탕 화면\\HitterGame22\\HitterGame\\HitterGame.csproj",
+        "projectPath": "D:\\qnstjr\\HitterGameCHBS\\HitterGame\\HitterGame.csproj",
         "packagesPath": "C:\\Users\\Rakku\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Rakku\\OneDrive\\바탕 화면\\HitterGame22\\HitterGame\\obj\\",
+        "outputPath": "D:\\qnstjr\\HitterGameCHBS\\HitterGame\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Rakku\\AppData\\Roaming\\NuGet\\NuGet.Config",

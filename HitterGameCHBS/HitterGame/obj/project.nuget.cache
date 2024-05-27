@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "19hWFhLoSEa8qKY+j/x3wqNbu/s01u6tl5UbMnmRL8R2F9LlM1jH+gfp2frwIfBzD/04bgpqGieQVOUPjQxBGA==",
+  "dgSpecHash": "H1i9U1HpOCjRi5Ledq0QTbk5O3y1MNgFlmJvwnpf2Ur3bbWNNsL3xjqgvkPP8hczAipaOzp/NOFQ+6UuTNfkXQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Rakku\\OneDrive\\바탕 화면\\HitterGame22\\HitterGame\\HitterGame.csproj",
+  "projectFilePath": "D:\\qnstjr\\HitterGameCHBS\\HitterGame\\HitterGame.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Rakku\\.nuget\\packages\\google.apis\\1.68.0\\google.apis.1.68.0.nupkg.sha512",
     "C:\\Users\\Rakku\\.nuget\\packages\\google.apis.auth\\1.68.0\\google.apis.auth.1.68.0.nupkg.sha512",
