@@ -117,7 +117,7 @@ namespace Baseball_Final
         {
             Console.Clear();
             DrawingObject bigWindow = new DrawingObject(70, 26);
-            bigWindow.manualDraw();            
+            bigWindow.manualDraw();
         }
 
         static void StartGame(string playerID)
@@ -178,7 +178,10 @@ namespace Baseball_Final
                             Console.WriteLine("~~~!!홈 런!!~~~");
                             Console.ResetColor();
                             homerun++;
-                            score += 1;
+                            score += 4;
+
+                            // 홈런 사운드 재생
+                            PlayHomeRunSound();
                         }
                         else if (hitOutcome <= 70)
                         {
@@ -195,7 +198,10 @@ namespace Baseball_Final
                             Console.WriteLine("안타!");
                             Console.ResetColor();
                             ahnta++;
-                            score += 0.25;
+                            score += 1;
+
+                            // 안타 사운드 재생
+                            PlayAhntaSound();
                         }
                         else
                         {
@@ -212,7 +218,7 @@ namespace Baseball_Final
                             Console.WriteLine("아웃!");
                             Console.ResetColor();
                             outs++;
-                            score -= 1;
+                            score -= 2;
                         }
                     }
                     else
@@ -239,7 +245,7 @@ namespace Baseball_Final
                                 Console.WriteLine("볼넷!");
                                 Console.ResetColor();
                                 totalTrials++;
-                                score += 0.25;
+                                score += 1;
                             }
                             else
                             {
@@ -256,7 +262,7 @@ namespace Baseball_Final
                                 Console.WriteLine("아웃!");
                                 Console.ResetColor();
                                 outs++;
-                                score -= 1;
+                                score -= 2;
                             }
                         }
                     }
@@ -299,6 +305,8 @@ namespace Baseball_Final
             Console.SetCursorPosition(3, 24);
             Console.WriteLine("게임을 다시 시작하시겠습니까? (예: y / 아니오: n) : ");
             Console.SetCursorPosition(55, 24);
+            Console.WriteLine("        ");
+            Console.SetCursorPosition(55, 24);
             string input = Console.ReadLine().ToLower();
 
             if (input == "y" || input == "yes")
@@ -311,7 +319,9 @@ namespace Baseball_Final
                 return false;
             }
 
-            return true;
+            else{
+                return AskToPlayAgain(); // 재귀적으로 메서드를 호출하여 사용자에게 다시 입력 받습니다.
+            }
         }
 
         static async Task SendDataToGoogleSheet(string playerID, string logintime, string nowtime, double score, int all, int homerun, int outs, int totalTrials, int ahnta)
@@ -406,6 +416,9 @@ namespace Baseball_Final
                         using (var audioFile = new AudioFileReader(backgroundMusicPath))
                         using (var outputDevice = new WaveOutEvent())
                         {
+                            // 사운드 볼륨 조절
+                            audioFile.Volume = 0.01f;
+
                             outputDevice.Init(audioFile);
                             outputDevice.Play();
 
@@ -427,5 +440,70 @@ namespace Baseball_Final
                 Console.WriteLine($"배경 음악을 재생하는 중 오류 발생: {ex.Message}");
             }
         }
+
+        // 홈런 사운드 재생
+        static void PlayHomeRunSound()
+        {
+            string executablePath = AppDomain.CurrentDomain.BaseDirectory;
+            string homeRunSoundPath = Path.Combine(executablePath, "homerun4.wav");
+
+            if (File.Exists(homeRunSoundPath))
+            {
+                try
+                {
+                    using (var audioFile = new AudioFileReader(homeRunSoundPath))
+                    using (var outputDevice = new WaveOutEvent())
+                    {
+                        outputDevice.Init(audioFile);
+                        outputDevice.Play();
+                        while (outputDevice.PlaybackState == PlaybackState.Playing)
+                        {
+                            Thread.Sleep(100);
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"홈런 사운드 재생 중 오류 발생: {ex.Message}");
+                }
+            }
+            else
+            {
+                Console.WriteLine("홈런 사운드 파일을 찾을 수 없습니다.");
+            }
+        }
+
+        // 안타 사운드 재생
+        static void PlayAhntaSound()
+        {
+            string executablePath = AppDomain.CurrentDomain.BaseDirectory;
+            string ahntaSoundPath = Path.Combine(executablePath, "Anta.wav");
+
+            if (File.Exists(ahntaSoundPath))
+            {
+                try
+                {
+                    using (var audioFile = new AudioFileReader(ahntaSoundPath))
+                    using (var outputDevice = new WaveOutEvent())
+                    {
+                        outputDevice.Init(audioFile);
+                        outputDevice.Play();
+                        while (outputDevice.PlaybackState == PlaybackState.Playing)
+                        {
+                            Thread.Sleep(100);
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"안타 사운드 재생 중 오류 발생: {ex.Message}");
+                }
+            }
+            else
+            {
+                Console.WriteLine("안타 사운드 파일을 찾을 수 없습니다.");
+            }
+        }
+
     }
 }

@@ -86,7 +86,7 @@ namespace HitterGame
             Console.SetCursorPosition(3, 11);
             Console.WriteLine($"2. 게임이 시작되면 아웃이 되지 않는 이상 계속 타석에 설 수 있다.");
             Console.SetCursorPosition(3, 13);
-            Console.WriteLine($"3. 각 카운트당 점수는 안타: 0.25 / 홈런: 1 / 볼넷:0.25 / 아웃: - 1");
+            Console.WriteLine($"3. 각 카운트당 점수는 안타: 1 / 홈런: 4 / 볼넷: 1 / 아웃: - 2");
 
             Console.SetCursorPosition(13, 21);
             Console.Write("로비로 돌아가시겠습니까? (예: y / 아니오: n): ");
