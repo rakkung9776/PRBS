@@ -183,7 +183,7 @@ namespace Baseball_Final
                             // 홈런 사운드 재생
                             PlayHomeRunSound();
                         }
-                        else if (hitOutcome <= 70)
+                        else if (hitOutcome <= 75)
                         {
                             Console.ForegroundColor = ConsoleColor.Green;
                             Console.SetCursorPosition(3, 10);
