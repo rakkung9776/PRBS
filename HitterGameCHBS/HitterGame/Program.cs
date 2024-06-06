@@ -183,7 +183,7 @@ namespace Baseball_Final
                             // 홈런 사운드 재생
                             PlayHomeRunSound();
                         }
-                        else if (hitOutcome <= 75)
+                        else if (hitOutcome <= 80)
                         {
                             Console.ForegroundColor = ConsoleColor.Green;
                             Console.SetCursorPosition(3, 10);
@@ -233,7 +233,7 @@ namespace Baseball_Final
                         {
                             int hitOutcome = random.Next(1, 101);
 
-                            if (hitOutcome <= 50)
+                            if (hitOutcome <= 90)
                             {
                                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                                 Console.SetCursorPosition(3, 10);
@@ -248,7 +248,7 @@ namespace Baseball_Final
                                 Console.WriteLine("볼넷!");
                                 Console.ResetColor();
                                 totalTrials++;
-                                score += 0.25;
+                                
 
                                 //볼넷 사운드 재생
                                 Playfourballsound();
