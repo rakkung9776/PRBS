@@ -1,0 +1,237 @@
+C:\Users\KBG\Desktop\YUHAN\2024\게임데이터분석\HitterGame\HitterGame\bin\Debug\net8.0\HitterGame.exe
+C:\Users\KBG\Desktop\YUHAN\2024\게임데이터분석\HitterGame\HitterGame\bin\Debug\net8.0\HitterGame.deps.json
+C:\Users\KBG\Desktop\YUHAN\2024\게임데이터분석\HitterGame\HitterGame\bin\Debug\net8.0\HitterGame.runtimeconfig.json
+C:\Users\KBG\Desktop\YUHAN\2024\게임데이터분석\HitterGame\HitterGame\bin\Debug\net8.0\HitterGame.dll
+C:\Users\KBG\Desktop\YUHAN\2024\게임데이터분석\HitterGame\HitterGame\bin\Debug\net8.0\HitterGame.pdb
+C:\Users\KBG\Desktop\YUHAN\2024\게임데이터분석\HitterGame\HitterGame\obj\Debug\net8.0\HitterGame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\KBG\Desktop\YUHAN\2024\게임데이터분석\HitterGame\HitterGame\obj\Debug\net8.0\HitterGame.AssemblyInfoInputs.cache
+C:\Users\KBG\Desktop\YUHAN\2024\게임데이터분석\HitterGame\HitterGame\obj\Debug\net8.0\HitterGame.AssemblyInfo.cs
+C:\Users\KBG\Desktop\YUHAN\2024\게임데이터분석\HitterGame\HitterGame\obj\Debug\net8.0\HitterGame.csproj.CoreCompileInputs.cache
+C:\Users\KBG\Desktop\YUHAN\2024\게임데이터분석\HitterGame\HitterGame\obj\Debug\net8.0\HitterGame.dll
+C:\Users\KBG\Desktop\YUHAN\2024\게임데이터분석\HitterGame\HitterGame\obj\Debug\net8.0\refint\HitterGame.dll
+C:\Users\KBG\Desktop\YUHAN\2024\게임데이터분석\HitterGame\HitterGame\obj\Debug\net8.0\HitterGame.pdb
+C:\Users\KBG\Desktop\YUHAN\2024\게임데이터분석\HitterGame\HitterGame\obj\Debug\net8.0\HitterGame.genruntimeconfig.cache
+C:\Users\KBG\Desktop\YUHAN\2024\게임데이터분석\HitterGame\HitterGame\obj\Debug\net8.0\ref\HitterGame.dll
+C:\KBG_GD\게임데이터분석\HitterGame\HitterGame\bin\Debug\net8.0\HitterGame.exe
+C:\KBG_GD\게임데이터분석\HitterGame\HitterGame\bin\Debug\net8.0\HitterGame.deps.json
+C:\KBG_GD\게임데이터분석\HitterGame\HitterGame\bin\Debug\net8.0\HitterGame.runtimeconfig.json
+C:\KBG_GD\게임데이터분석\HitterGame\HitterGame\bin\Debug\net8.0\HitterGame.dll
+C:\KBG_GD\게임데이터분석\HitterGame\HitterGame\bin\Debug\net8.0\HitterGame.pdb
+C:\KBG_GD\게임데이터분석\HitterGame\HitterGame\obj\Debug\net8.0\HitterGame.GeneratedMSBuildEditorConfig.editorconfig
+C:\KBG_GD\게임데이터분석\HitterGame\HitterGame\obj\Debug\net8.0\HitterGame.AssemblyInfoInputs.cache
+C:\KBG_GD\게임데이터분석\HitterGame\HitterGame\obj\Debug\net8.0\HitterGame.AssemblyInfo.cs
+C:\KBG_GD\게임데이터분석\HitterGame\HitterGame\obj\Debug\net8.0\HitterGame.csproj.CoreCompileInputs.cache
+C:\KBG_GD\게임데이터분석\HitterGame\HitterGame\obj\Debug\net8.0\HitterGame.dll
+C:\KBG_GD\게임데이터분석\HitterGame\HitterGame\obj\Debug\net8.0\refint\HitterGame.dll
+C:\KBG_GD\게임데이터분석\HitterGame\HitterGame\obj\Debug\net8.0\HitterGame.pdb
+C:\KBG_GD\게임데이터분석\HitterGame\HitterGame\obj\Debug\net8.0\HitterGame.genruntimeconfig.cache
+C:\KBG_GD\게임데이터분석\HitterGame\HitterGame\obj\Debug\net8.0\ref\HitterGame.dll
+C:\KBG_GD\HitterGame\HitterGame\bin\Debug\net8.0\HitterGame.exe
+C:\KBG_GD\HitterGame\HitterGame\bin\Debug\net8.0\HitterGame.deps.json
+C:\KBG_GD\HitterGame\HitterGame\bin\Debug\net8.0\HitterGame.runtimeconfig.json
+C:\KBG_GD\HitterGame\HitterGame\bin\Debug\net8.0\HitterGame.dll
+C:\KBG_GD\HitterGame\HitterGame\bin\Debug\net8.0\HitterGame.pdb
+C:\KBG_GD\HitterGame\HitterGame\obj\Debug\net8.0\HitterGame.GeneratedMSBuildEditorConfig.editorconfig
+C:\KBG_GD\HitterGame\HitterGame\obj\Debug\net8.0\HitterGame.AssemblyInfoInputs.cache
+C:\KBG_GD\HitterGame\HitterGame\obj\Debug\net8.0\HitterGame.AssemblyInfo.cs
+C:\KBG_GD\HitterGame\HitterGame\obj\Debug\net8.0\HitterGame.csproj.CoreCompileInputs.cache
+C:\KBG_GD\HitterGame\HitterGame\obj\Debug\net8.0\HitterGame.sourcelink.json
+C:\KBG_GD\HitterGame\HitterGame\obj\Debug\net8.0\HitterGame.dll
+C:\KBG_GD\HitterGame\HitterGame\obj\Debug\net8.0\refint\HitterGame.dll
+C:\KBG_GD\HitterGame\HitterGame\obj\Debug\net8.0\HitterGame.pdb
+C:\KBG_GD\HitterGame\HitterGame\obj\Debug\net8.0\HitterGame.genruntimeconfig.cache
+C:\KBG_GD\HitterGame\HitterGame\obj\Debug\net8.0\ref\HitterGame.dll
+C:\KBG_GD\HitterGame\HitterGame\bin\Debug\net8.0\Google.Apis.dll
+C:\KBG_GD\HitterGame\HitterGame\bin\Debug\net8.0\Google.Apis.Auth.dll
+C:\KBG_GD\HitterGame\HitterGame\bin\Debug\net8.0\Google.Apis.Core.dll
+C:\KBG_GD\HitterGame\HitterGame\bin\Debug\net8.0\Google.Apis.Sheets.v4.dll
+C:\KBG_GD\HitterGame\HitterGame\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\KBG_GD\HitterGame\HitterGame\bin\Debug\net8.0\System.CodeDom.dll
+C:\KBG_GD\HitterGame\HitterGame\bin\Debug\net8.0\System.Management.dll
+C:\KBG_GD\HitterGame\HitterGame\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Management.dll
+C:\KBG_GD\HitterGame\HitterGame\obj\Debug\net8.0\HitterGame.csproj.AssemblyReference.cache
+C:\KBG_GD\HitterGame\HitterGame\obj\Debug\net8.0\HitterGame.csproj.Up2Date
+C:\Jeky\2학년\데이터분석\HitterGame\HitterGame\bin\Debug\net8.0\HitterGame.exe
+C:\Jeky\2학년\데이터분석\HitterGame\HitterGame\bin\Debug\net8.0\HitterGame.deps.json
+C:\Jeky\2학년\데이터분석\HitterGame\HitterGame\bin\Debug\net8.0\HitterGame.runtimeconfig.json
+C:\Jeky\2학년\데이터분석\HitterGame\HitterGame\bin\Debug\net8.0\HitterGame.dll
+C:\Jeky\2학년\데이터분석\HitterGame\HitterGame\bin\Debug\net8.0\HitterGame.pdb
+C:\Jeky\2학년\데이터분석\HitterGame\HitterGame\bin\Debug\net8.0\Google.Apis.dll
+C:\Jeky\2학년\데이터분석\HitterGame\HitterGame\bin\Debug\net8.0\Google.Apis.Auth.dll
+C:\Jeky\2학년\데이터분석\HitterGame\HitterGame\bin\Debug\net8.0\Google.Apis.Core.dll
+C:\Jeky\2학년\데이터분석\HitterGame\HitterGame\bin\Debug\net8.0\Google.Apis.Sheets.v4.dll
+C:\Jeky\2학년\데이터분석\HitterGame\HitterGame\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Jeky\2학년\데이터분석\HitterGame\HitterGame\bin\Debug\net8.0\System.CodeDom.dll
+C:\Jeky\2학년\데이터분석\HitterGame\HitterGame\bin\Debug\net8.0\System.Management.dll
+C:\Jeky\2학년\데이터분석\HitterGame\HitterGame\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Management.dll
+C:\Jeky\2학년\데이터분석\HitterGame\HitterGame\obj\Debug\net8.0\HitterGame.csproj.AssemblyReference.cache
+C:\Jeky\2학년\데이터분석\HitterGame\HitterGame\obj\Debug\net8.0\HitterGame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Jeky\2학년\데이터분석\HitterGame\HitterGame\obj\Debug\net8.0\HitterGame.AssemblyInfoInputs.cache
+C:\Jeky\2학년\데이터분석\HitterGame\HitterGame\obj\Debug\net8.0\HitterGame.AssemblyInfo.cs
+C:\Jeky\2학년\데이터분석\HitterGame\HitterGame\obj\Debug\net8.0\HitterGame.csproj.CoreCompileInputs.cache
+C:\Jeky\2학년\데이터분석\HitterGame\HitterGame\obj\Debug\net8.0\HitterGame.sourcelink.json
+C:\Jeky\2학년\데이터분석\HitterGame\HitterGame\obj\Debug\net8.0\HitterGame.csproj.Up2Date
+C:\Jeky\2학년\데이터분석\HitterGame\HitterGame\obj\Debug\net8.0\HitterGame.dll
+C:\Jeky\2학년\데이터분석\HitterGame\HitterGame\obj\Debug\net8.0\refint\HitterGame.dll
+C:\Jeky\2학년\데이터분석\HitterGame\HitterGame\obj\Debug\net8.0\HitterGame.pdb
+C:\Jeky\2학년\데이터분석\HitterGame\HitterGame\obj\Debug\net8.0\HitterGame.genruntimeconfig.cache
+C:\Jeky\2학년\데이터분석\HitterGame\HitterGame\obj\Debug\net8.0\ref\HitterGame.dll
+C:\Jeky\2학년\데이터분석\HitterGame\HitterGame\bin\Debug\net8.0\NAudio.dll
+C:\Jeky\2학년\데이터분석\HitterGame\HitterGame\bin\Debug\net8.0\NAudio.Asio.dll
+C:\Jeky\2학년\데이터분석\HitterGame\HitterGame\bin\Debug\net8.0\NAudio.Core.dll
+C:\Jeky\2학년\데이터분석\HitterGame\HitterGame\bin\Debug\net8.0\NAudio.Midi.dll
+C:\Jeky\2학년\데이터분석\HitterGame\HitterGame\bin\Debug\net8.0\NAudio.Wasapi.dll
+C:\Jeky\2학년\데이터분석\HitterGame\HitterGame\bin\Debug\net8.0\NAudio.WinMM.dll
+C:\Users\남건욱\Desktop\HitterGame22\HitterGame\bin\Debug\net8.0\HitterGame.exe
+C:\Users\남건욱\Desktop\HitterGame22\HitterGame\bin\Debug\net8.0\HitterGame.deps.json
+C:\Users\남건욱\Desktop\HitterGame22\HitterGame\bin\Debug\net8.0\HitterGame.runtimeconfig.json
+C:\Users\남건욱\Desktop\HitterGame22\HitterGame\bin\Debug\net8.0\HitterGame.dll
+C:\Users\남건욱\Desktop\HitterGame22\HitterGame\bin\Debug\net8.0\HitterGame.pdb
+C:\Users\남건욱\Desktop\HitterGame22\HitterGame\bin\Debug\net8.0\Google.Apis.dll
+C:\Users\남건욱\Desktop\HitterGame22\HitterGame\bin\Debug\net8.0\Google.Apis.Auth.dll
+C:\Users\남건욱\Desktop\HitterGame22\HitterGame\bin\Debug\net8.0\Google.Apis.Core.dll
+C:\Users\남건욱\Desktop\HitterGame22\HitterGame\bin\Debug\net8.0\Google.Apis.Sheets.v4.dll
+C:\Users\남건욱\Desktop\HitterGame22\HitterGame\bin\Debug\net8.0\NAudio.dll
+C:\Users\남건욱\Desktop\HitterGame22\HitterGame\bin\Debug\net8.0\NAudio.Asio.dll
+C:\Users\남건욱\Desktop\HitterGame22\HitterGame\bin\Debug\net8.0\NAudio.Core.dll
+C:\Users\남건욱\Desktop\HitterGame22\HitterGame\bin\Debug\net8.0\NAudio.Midi.dll
+C:\Users\남건욱\Desktop\HitterGame22\HitterGame\bin\Debug\net8.0\NAudio.Wasapi.dll
+C:\Users\남건욱\Desktop\HitterGame22\HitterGame\bin\Debug\net8.0\NAudio.WinMM.dll
+C:\Users\남건욱\Desktop\HitterGame22\HitterGame\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\남건욱\Desktop\HitterGame22\HitterGame\bin\Debug\net8.0\System.CodeDom.dll
+C:\Users\남건욱\Desktop\HitterGame22\HitterGame\bin\Debug\net8.0\System.Management.dll
+C:\Users\남건욱\Desktop\HitterGame22\HitterGame\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Management.dll
+C:\Users\남건욱\Desktop\HitterGame22\HitterGame\obj\Debug\net8.0\HitterGame.csproj.AssemblyReference.cache
+C:\Users\남건욱\Desktop\HitterGame22\HitterGame\obj\Debug\net8.0\HitterGame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\남건욱\Desktop\HitterGame22\HitterGame\obj\Debug\net8.0\HitterGame.AssemblyInfoInputs.cache
+C:\Users\남건욱\Desktop\HitterGame22\HitterGame\obj\Debug\net8.0\HitterGame.AssemblyInfo.cs
+C:\Users\남건욱\Desktop\HitterGame22\HitterGame\obj\Debug\net8.0\HitterGame.csproj.CoreCompileInputs.cache
+C:\Users\남건욱\Desktop\HitterGame22\HitterGame\obj\Debug\net8.0\HitterGame.csproj.Up2Date
+C:\Users\남건욱\Desktop\HitterGame22\HitterGame\obj\Debug\net8.0\HitterGame.dll
+C:\Users\남건욱\Desktop\HitterGame22\HitterGame\obj\Debug\net8.0\refint\HitterGame.dll
+C:\Users\남건욱\Desktop\HitterGame22\HitterGame\obj\Debug\net8.0\HitterGame.pdb
+C:\Users\남건욱\Desktop\HitterGame22\HitterGame\obj\Debug\net8.0\HitterGame.genruntimeconfig.cache
+C:\Users\남건욱\Desktop\HitterGame22\HitterGame\obj\Debug\net8.0\ref\HitterGame.dll
+C:\Users\Rakku\OneDrive\바탕 화면\HitterGame22\HitterGame\bin\Debug\net8.0\HitterGame.exe
+C:\Users\Rakku\OneDrive\바탕 화면\HitterGame22\HitterGame\bin\Debug\net8.0\HitterGame.deps.json
+C:\Users\Rakku\OneDrive\바탕 화면\HitterGame22\HitterGame\bin\Debug\net8.0\HitterGame.runtimeconfig.json
+C:\Users\Rakku\OneDrive\바탕 화면\HitterGame22\HitterGame\bin\Debug\net8.0\HitterGame.dll
+C:\Users\Rakku\OneDrive\바탕 화면\HitterGame22\HitterGame\bin\Debug\net8.0\HitterGame.pdb
+C:\Users\Rakku\OneDrive\바탕 화면\HitterGame22\HitterGame\bin\Debug\net8.0\Google.Apis.dll
+C:\Users\Rakku\OneDrive\바탕 화면\HitterGame22\HitterGame\bin\Debug\net8.0\Google.Apis.Auth.dll
+C:\Users\Rakku\OneDrive\바탕 화면\HitterGame22\HitterGame\bin\Debug\net8.0\Google.Apis.Core.dll
+C:\Users\Rakku\OneDrive\바탕 화면\HitterGame22\HitterGame\bin\Debug\net8.0\Google.Apis.Sheets.v4.dll
+C:\Users\Rakku\OneDrive\바탕 화면\HitterGame22\HitterGame\bin\Debug\net8.0\NAudio.dll
+C:\Users\Rakku\OneDrive\바탕 화면\HitterGame22\HitterGame\bin\Debug\net8.0\NAudio.Asio.dll
+C:\Users\Rakku\OneDrive\바탕 화면\HitterGame22\HitterGame\bin\Debug\net8.0\NAudio.Core.dll
+C:\Users\Rakku\OneDrive\바탕 화면\HitterGame22\HitterGame\bin\Debug\net8.0\NAudio.Midi.dll
+C:\Users\Rakku\OneDrive\바탕 화면\HitterGame22\HitterGame\bin\Debug\net8.0\NAudio.Wasapi.dll
+C:\Users\Rakku\OneDrive\바탕 화면\HitterGame22\HitterGame\bin\Debug\net8.0\NAudio.WinMM.dll
+C:\Users\Rakku\OneDrive\바탕 화면\HitterGame22\HitterGame\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Rakku\OneDrive\바탕 화면\HitterGame22\HitterGame\bin\Debug\net8.0\System.CodeDom.dll
+C:\Users\Rakku\OneDrive\바탕 화면\HitterGame22\HitterGame\bin\Debug\net8.0\System.Management.dll
+C:\Users\Rakku\OneDrive\바탕 화면\HitterGame22\HitterGame\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Management.dll
+C:\Users\Rakku\OneDrive\바탕 화면\HitterGame22\HitterGame\obj\Debug\net8.0\HitterGame.csproj.AssemblyReference.cache
+C:\Users\Rakku\OneDrive\바탕 화면\HitterGame22\HitterGame\obj\Debug\net8.0\HitterGame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Rakku\OneDrive\바탕 화면\HitterGame22\HitterGame\obj\Debug\net8.0\HitterGame.AssemblyInfoInputs.cache
+C:\Users\Rakku\OneDrive\바탕 화면\HitterGame22\HitterGame\obj\Debug\net8.0\HitterGame.AssemblyInfo.cs
+C:\Users\Rakku\OneDrive\바탕 화면\HitterGame22\HitterGame\obj\Debug\net8.0\HitterGame.csproj.CoreCompileInputs.cache
+C:\Users\Rakku\OneDrive\바탕 화면\HitterGame22\HitterGame\obj\Debug\net8.0\HitterGame.csproj.Up2Date
+C:\Users\Rakku\OneDrive\바탕 화면\HitterGame22\HitterGame\obj\Debug\net8.0\HitterGame.dll
+C:\Users\Rakku\OneDrive\바탕 화면\HitterGame22\HitterGame\obj\Debug\net8.0\refint\HitterGame.dll
+C:\Users\Rakku\OneDrive\바탕 화면\HitterGame22\HitterGame\obj\Debug\net8.0\HitterGame.pdb
+C:\Users\Rakku\OneDrive\바탕 화면\HitterGame22\HitterGame\obj\Debug\net8.0\HitterGame.genruntimeconfig.cache
+C:\Users\Rakku\OneDrive\바탕 화면\HitterGame22\HitterGame\obj\Debug\net8.0\ref\HitterGame.dll
+D:\qnstjr\HitterGameCHBS\HitterGame\bin\Debug\net8.0\HitterGame.exe
+D:\qnstjr\HitterGameCHBS\HitterGame\bin\Debug\net8.0\HitterGame.deps.json
+D:\qnstjr\HitterGameCHBS\HitterGame\bin\Debug\net8.0\HitterGame.runtimeconfig.json
+D:\qnstjr\HitterGameCHBS\HitterGame\bin\Debug\net8.0\HitterGame.dll
+D:\qnstjr\HitterGameCHBS\HitterGame\bin\Debug\net8.0\HitterGame.pdb
+D:\qnstjr\HitterGameCHBS\HitterGame\bin\Debug\net8.0\Google.Apis.dll
+D:\qnstjr\HitterGameCHBS\HitterGame\bin\Debug\net8.0\Google.Apis.Auth.dll
+D:\qnstjr\HitterGameCHBS\HitterGame\bin\Debug\net8.0\Google.Apis.Core.dll
+D:\qnstjr\HitterGameCHBS\HitterGame\bin\Debug\net8.0\Google.Apis.Sheets.v4.dll
+D:\qnstjr\HitterGameCHBS\HitterGame\bin\Debug\net8.0\NAudio.dll
+D:\qnstjr\HitterGameCHBS\HitterGame\bin\Debug\net8.0\NAudio.Asio.dll
+D:\qnstjr\HitterGameCHBS\HitterGame\bin\Debug\net8.0\NAudio.Core.dll
+D:\qnstjr\HitterGameCHBS\HitterGame\bin\Debug\net8.0\NAudio.Midi.dll
+D:\qnstjr\HitterGameCHBS\HitterGame\bin\Debug\net8.0\NAudio.Wasapi.dll
+D:\qnstjr\HitterGameCHBS\HitterGame\bin\Debug\net8.0\NAudio.WinMM.dll
+D:\qnstjr\HitterGameCHBS\HitterGame\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\qnstjr\HitterGameCHBS\HitterGame\bin\Debug\net8.0\System.CodeDom.dll
+D:\qnstjr\HitterGameCHBS\HitterGame\bin\Debug\net8.0\System.Management.dll
+D:\qnstjr\HitterGameCHBS\HitterGame\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Management.dll
+D:\qnstjr\HitterGameCHBS\HitterGame\obj\Debug\net8.0\HitterGame.csproj.AssemblyReference.cache
+D:\qnstjr\HitterGameCHBS\HitterGame\obj\Debug\net8.0\HitterGame.GeneratedMSBuildEditorConfig.editorconfig
+D:\qnstjr\HitterGameCHBS\HitterGame\obj\Debug\net8.0\HitterGame.AssemblyInfoInputs.cache
+D:\qnstjr\HitterGameCHBS\HitterGame\obj\Debug\net8.0\HitterGame.AssemblyInfo.cs
+D:\qnstjr\HitterGameCHBS\HitterGame\obj\Debug\net8.0\HitterGame.csproj.CoreCompileInputs.cache
+D:\qnstjr\HitterGameCHBS\HitterGame\obj\Debug\net8.0\HitterGame.sourcelink.json
+D:\qnstjr\HitterGameCHBS\HitterGame\obj\Debug\net8.0\HitterGame.csproj.Up2Date
+D:\qnstjr\HitterGameCHBS\HitterGame\obj\Debug\net8.0\HitterGame.dll
+D:\qnstjr\HitterGameCHBS\HitterGame\obj\Debug\net8.0\refint\HitterGame.dll
+D:\qnstjr\HitterGameCHBS\HitterGame\obj\Debug\net8.0\HitterGame.pdb
+D:\qnstjr\HitterGameCHBS\HitterGame\obj\Debug\net8.0\HitterGame.genruntimeconfig.cache
+D:\qnstjr\HitterGameCHBS\HitterGame\obj\Debug\net8.0\ref\HitterGame.dll
+C:\Users\남건욱\Desktop\DDS\PRBS\HitterGameCHBS\HitterGame\bin\Debug\net8.0\HitterGame.exe
+C:\Users\남건욱\Desktop\DDS\PRBS\HitterGameCHBS\HitterGame\bin\Debug\net8.0\HitterGame.deps.json
+C:\Users\남건욱\Desktop\DDS\PRBS\HitterGameCHBS\HitterGame\bin\Debug\net8.0\HitterGame.runtimeconfig.json
+C:\Users\남건욱\Desktop\DDS\PRBS\HitterGameCHBS\HitterGame\bin\Debug\net8.0\HitterGame.dll
+C:\Users\남건욱\Desktop\DDS\PRBS\HitterGameCHBS\HitterGame\bin\Debug\net8.0\HitterGame.pdb
+C:\Users\남건욱\Desktop\DDS\PRBS\HitterGameCHBS\HitterGame\bin\Debug\net8.0\Google.Apis.dll
+C:\Users\남건욱\Desktop\DDS\PRBS\HitterGameCHBS\HitterGame\bin\Debug\net8.0\Google.Apis.Auth.dll
+C:\Users\남건욱\Desktop\DDS\PRBS\HitterGameCHBS\HitterGame\bin\Debug\net8.0\Google.Apis.Core.dll
+C:\Users\남건욱\Desktop\DDS\PRBS\HitterGameCHBS\HitterGame\bin\Debug\net8.0\Google.Apis.Sheets.v4.dll
+C:\Users\남건욱\Desktop\DDS\PRBS\HitterGameCHBS\HitterGame\bin\Debug\net8.0\NAudio.dll
+C:\Users\남건욱\Desktop\DDS\PRBS\HitterGameCHBS\HitterGame\bin\Debug\net8.0\NAudio.Asio.dll
+C:\Users\남건욱\Desktop\DDS\PRBS\HitterGameCHBS\HitterGame\bin\Debug\net8.0\NAudio.Core.dll
+C:\Users\남건욱\Desktop\DDS\PRBS\HitterGameCHBS\HitterGame\bin\Debug\net8.0\NAudio.Midi.dll
+C:\Users\남건욱\Desktop\DDS\PRBS\HitterGameCHBS\HitterGame\bin\Debug\net8.0\NAudio.Wasapi.dll
+C:\Users\남건욱\Desktop\DDS\PRBS\HitterGameCHBS\HitterGame\bin\Debug\net8.0\NAudio.WinMM.dll
+C:\Users\남건욱\Desktop\DDS\PRBS\HitterGameCHBS\HitterGame\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\남건욱\Desktop\DDS\PRBS\HitterGameCHBS\HitterGame\bin\Debug\net8.0\System.CodeDom.dll
+C:\Users\남건욱\Desktop\DDS\PRBS\HitterGameCHBS\HitterGame\bin\Debug\net8.0\System.Management.dll
+C:\Users\남건욱\Desktop\DDS\PRBS\HitterGameCHBS\HitterGame\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Management.dll
+C:\Users\남건욱\Desktop\DDS\PRBS\HitterGameCHBS\HitterGame\obj\Debug\net8.0\HitterGame.csproj.AssemblyReference.cache
+C:\Users\남건욱\Desktop\DDS\PRBS\HitterGameCHBS\HitterGame\obj\Debug\net8.0\HitterGame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\남건욱\Desktop\DDS\PRBS\HitterGameCHBS\HitterGame\obj\Debug\net8.0\HitterGame.AssemblyInfoInputs.cache
+C:\Users\남건욱\Desktop\DDS\PRBS\HitterGameCHBS\HitterGame\obj\Debug\net8.0\HitterGame.AssemblyInfo.cs
+C:\Users\남건욱\Desktop\DDS\PRBS\HitterGameCHBS\HitterGame\obj\Debug\net8.0\HitterGame.csproj.CoreCompileInputs.cache
+C:\Users\남건욱\Desktop\DDS\PRBS\HitterGameCHBS\HitterGame\obj\Debug\net8.0\HitterGame.sourcelink.json
+C:\Users\남건욱\Desktop\DDS\PRBS\HitterGameCHBS\HitterGame\obj\Debug\net8.0\HitterGame.csproj.Up2Date
+C:\Users\남건욱\Desktop\DDS\PRBS\HitterGameCHBS\HitterGame\obj\Debug\net8.0\HitterGame.dll
+C:\Users\남건욱\Desktop\DDS\PRBS\HitterGameCHBS\HitterGame\obj\Debug\net8.0\refint\HitterGame.dll
+C:\Users\남건욱\Desktop\DDS\PRBS\HitterGameCHBS\HitterGame\obj\Debug\net8.0\HitterGame.pdb
+C:\Users\남건욱\Desktop\DDS\PRBS\HitterGameCHBS\HitterGame\obj\Debug\net8.0\HitterGame.genruntimeconfig.cache
+C:\Users\남건욱\Desktop\DDS\PRBS\HitterGameCHBS\HitterGame\obj\Debug\net8.0\ref\HitterGame.dll
+C:\Users\남건욱\Desktop\OPS\PRBS\HitterGame2.0\HitterGame\bin\Debug\net8.0\HitterGame.exe
+C:\Users\남건욱\Desktop\OPS\PRBS\HitterGame2.0\HitterGame\bin\Debug\net8.0\HitterGame.deps.json
+C:\Users\남건욱\Desktop\OPS\PRBS\HitterGame2.0\HitterGame\bin\Debug\net8.0\HitterGame.runtimeconfig.json
+C:\Users\남건욱\Desktop\OPS\PRBS\HitterGame2.0\HitterGame\bin\Debug\net8.0\HitterGame.dll
+C:\Users\남건욱\Desktop\OPS\PRBS\HitterGame2.0\HitterGame\bin\Debug\net8.0\HitterGame.pdb
+C:\Users\남건욱\Desktop\OPS\PRBS\HitterGame2.0\HitterGame\bin\Debug\net8.0\Google.Apis.dll
+C:\Users\남건욱\Desktop\OPS\PRBS\HitterGame2.0\HitterGame\bin\Debug\net8.0\Google.Apis.Auth.dll
+C:\Users\남건욱\Desktop\OPS\PRBS\HitterGame2.0\HitterGame\bin\Debug\net8.0\Google.Apis.Core.dll
+C:\Users\남건욱\Desktop\OPS\PRBS\HitterGame2.0\HitterGame\bin\Debug\net8.0\Google.Apis.Sheets.v4.dll
+C:\Users\남건욱\Desktop\OPS\PRBS\HitterGame2.0\HitterGame\bin\Debug\net8.0\NAudio.dll
+C:\Users\남건욱\Desktop\OPS\PRBS\HitterGame2.0\HitterGame\bin\Debug\net8.0\NAudio.Asio.dll
+C:\Users\남건욱\Desktop\OPS\PRBS\HitterGame2.0\HitterGame\bin\Debug\net8.0\NAudio.Core.dll
+C:\Users\남건욱\Desktop\OPS\PRBS\HitterGame2.0\HitterGame\bin\Debug\net8.0\NAudio.Midi.dll
+C:\Users\남건욱\Desktop\OPS\PRBS\HitterGame2.0\HitterGame\bin\Debug\net8.0\NAudio.Wasapi.dll
+C:\Users\남건욱\Desktop\OPS\PRBS\HitterGame2.0\HitterGame\bin\Debug\net8.0\NAudio.WinMM.dll
+C:\Users\남건욱\Desktop\OPS\PRBS\HitterGame2.0\HitterGame\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\남건욱\Desktop\OPS\PRBS\HitterGame2.0\HitterGame\bin\Debug\net8.0\System.CodeDom.dll
+C:\Users\남건욱\Desktop\OPS\PRBS\HitterGame2.0\HitterGame\bin\Debug\net8.0\System.Management.dll
+C:\Users\남건욱\Desktop\OPS\PRBS\HitterGame2.0\HitterGame\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Management.dll
+C:\Users\남건욱\Desktop\OPS\PRBS\HitterGame2.0\HitterGame\obj\Debug\net8.0\HitterGame.csproj.AssemblyReference.cache
+C:\Users\남건욱\Desktop\OPS\PRBS\HitterGame2.0\HitterGame\obj\Debug\net8.0\HitterGame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\남건욱\Desktop\OPS\PRBS\HitterGame2.0\HitterGame\obj\Debug\net8.0\HitterGame.AssemblyInfoInputs.cache
+C:\Users\남건욱\Desktop\OPS\PRBS\HitterGame2.0\HitterGame\obj\Debug\net8.0\HitterGame.AssemblyInfo.cs
+C:\Users\남건욱\Desktop\OPS\PRBS\HitterGame2.0\HitterGame\obj\Debug\net8.0\HitterGame.csproj.CoreCompileInputs.cache
+C:\Users\남건욱\Desktop\OPS\PRBS\HitterGame2.0\HitterGame\obj\Debug\net8.0\HitterGame.sourcelink.json
+C:\Users\남건욱\Desktop\OPS\PRBS\HitterGame2.0\HitterGame\obj\Debug\net8.0\HitterGame.csproj.Up2Date
+C:\Users\남건욱\Desktop\OPS\PRBS\HitterGame2.0\HitterGame\obj\Debug\net8.0\HitterGame.dll
+C:\Users\남건욱\Desktop\OPS\PRBS\HitterGame2.0\HitterGame\obj\Debug\net8.0\refint\HitterGame.dll
+C:\Users\남건욱\Desktop\OPS\PRBS\HitterGame2.0\HitterGame\obj\Debug\net8.0\HitterGame.pdb
+C:\Users\남건욱\Desktop\OPS\PRBS\HitterGame2.0\HitterGame\obj\Debug\net8.0\HitterGame.genruntimeconfig.cache
+C:\Users\남건욱\Desktop\OPS\PRBS\HitterGame2.0\HitterGame\obj\Debug\net8.0\ref\HitterGame.dll
